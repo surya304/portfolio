@@ -349,7 +349,7 @@ export default function Example() {
                 </div>
 
                 <div className="">
-                  <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/JeevanKaree"
+                  <a target="_blank" rel="noopener noreferrer" href="https://surya-resume26.netlify.app/"
                     className="flex rounded-md  sm:w-full items-center justify-center rounded-md border border-transparent bg-[#55ACEE] px-4 py-3 text-base font-medium text-white md:py-2 md:px-4 md:text-lg"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -794,10 +794,10 @@ export default function Example() {
             <div className="mt-8 flex justify-center">
               <div className="inline-flex rounded-md shadow">
                 <a
-                  onClick={() => setOpenContact(true)}
+                  target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/surya304/" 
                   className="inline-flex cursor-pointer items-center justify-center rounded-md border border-transparent bg-orange-600 px-5 py-3 text-base font-medium text-white hover:bg-orange-600"
                 >
-                  Let&apos;s Discuss 🙋🏻‍♂️ 
+                Contact Me 🙋🏻‍♂️ 
                 </a>
               </div>
 
