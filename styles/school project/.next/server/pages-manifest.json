@@ -1,0 +1,14 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/api/auth/[...nextauth]": "pages/api/auth/[...nextauth].js",
+  "/api/userInfo": "pages/api/userInfo.js",
+  "/category": "pages/category.js",
+  "/api/All_fetch_queriesAPI": "pages/api/All_fetch_queriesAPI.js",
+  "/api/schoolinfoAPI": "pages/api/schoolinfoAPI.js",
+  "/subjects": "pages/subjects.js",
+  "/api/All_searchable_queryAPI": "pages/api/All_searchable_queryAPI.js",
+  "/schoolinfo": "pages/schoolinfo.js",
+  "/api/subjectAPI": "pages/api/subjectAPI.js"
+}
