@@ -297,6 +297,16 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
+
+function downloadFunc(){
+  var anchor=document.createElement('a');
+  anchor.setAttribute('href','/Sai-Surya-Kalagani-Resume.pdf');
+  anchor.setAttribute('download','');
+  document.body.appendChild(anchor);
+  anchor.click();
+  anchor.parentNode.removeChild(anchor);
+}
+
 export default function Example() {
   let [tabOrientation, setTabOrientation] = useState('horizontal')
   const [openContact, setOpenContact] = useState(false)
@@ -349,9 +359,7 @@ export default function Example() {
                 </div>
 
                 <div className="">
-                  <a target="_blank"  href="
-                  Sai-Surya-Kalagani-Resume.pdf
-                  " 
+                  <a target="_blank" onClick={downloadFunc}
                     className="flex rounded-md  sm:w-full items-center justify-center rounded-md border border-transparent bg-[#55ACEE] px-4 py-3 text-base font-medium text-white md:py-2 md:px-4 md:text-lg"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
