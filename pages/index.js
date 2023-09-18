@@ -298,10 +298,10 @@ function classNames(...classes) {
 }
 
 
-function downloadFunc(){
-  var anchor=document.createElement('a');
-  anchor.setAttribute('href','/Sai-Surya-Kalagani-Resume.pdf');
-  anchor.setAttribute('download','');
+function downloadFunc() {
+  var anchor = document.createElement('a');
+  anchor.setAttribute('href', '/Sai-Surya-Kalagani-Resume.pdf');
+  anchor.setAttribute('download', '');
   document.body.appendChild(anchor);
   anchor.click();
   console.log("t")
@@ -350,18 +350,20 @@ export default function Example() {
               <p className="text-left mt-3 max-w-md text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-2xl">
                 I am a Full Stack Web Developer,worked for 4 different startups.
               </p>
-              <div className="mt-10 sm:flex flex sm:justify-start justify-center sm:space-x-6 space-x-2">
+
+
+              <div className="mt-10 flex sm:justify-start  sm:space-x-6 space-x-2 wrapstyle">
                 <div className="">
-                  <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/surya304/" className="flex rounded-md  sm:w-full items-center justify-center rounded-md border border-transparent bg-[#007bb5] px-4 py-3 text-base font-medium text-white md:py-2 md:px-4 md:text-lg"
+                  <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/surya304/" className="flex sm:w-full items-center justify-center rounded-md border border-transparent bg-[#007bb5] px-4 py-3 text-base font-medium text-white md:py-2 md:px-4 md:text-lg"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" className='w-5 h-5'><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" /></svg>
                     &nbsp; Linkedin
                   </a>
                 </div>
 
-                <div className="">
+                <div >
                   <a target="_blank" onClick={downloadFunc}
-                    className="flex rounded-md  sm:w-full items-center justify-center rounded-md border border-transparent bg-[#55ACEE] px-4 py-3 text-base font-medium text-white md:py-2 md:px-4 md:text-lg"
+                    className="flex rounded-md  sm:w-full  items-center justify-center border border-transparent bg-[#55ACEE] px-4 py-3 text-base font-medium text-white md:py-2 md:px-4 md:text-lg"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
@@ -370,6 +372,20 @@ export default function Example() {
                     Resume
                   </a>
 
+                </div>
+
+                
+                <div className="">
+                  <a target="_blank" rel="noopener noreferrer"
+                    href="https://github.com/surya304"
+                    className="flex sm:w-full items-center justify-center rounded-md border border-transparent bg-slate-700 px-4 py-3 text-base font-medium text-white md:py-2 md:px-4 md:text-lg"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" className='mr-2 w-7 h-7'>
+                      <path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                    </svg>
+                    Github
+
+                  </a>
                 </div>
                 {/* <div className="">
               <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/JeevanKaree"
@@ -396,6 +412,8 @@ export default function Example() {
                   </svg>
               </a>
             </div> */}
+
+
               </div>
 
 
@@ -490,7 +508,7 @@ export default function Example() {
                   </h2>
                   <p className="text-lg leading-7 ">
                     I am a Full Stack Developer located in Brantford ,Ontario Canada.<br />
-                    In 2018, after My Degree With Computer Science and Love for Design I started working in a Startup Developing websites and Web APplicatons 
+                    In 2018, after My Degree With Computer Science and Love for Design I started working in a Startup Developing websites and Web APplicatons
                     From a UI Developer To a Full Stack Developer That Was a Truly Amazing Journey.
                   </p>
                   <p className="text-lg leading-7">
@@ -806,10 +824,10 @@ export default function Example() {
             <div className="mt-8 flex justify-center">
               <div className="inline-flex rounded-md shadow">
                 <a
-                  target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/surya304/" 
+                  target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/surya304/"
                   className="inline-flex cursor-pointer items-center justify-center rounded-md border border-transparent bg-orange-600 px-5 py-3 text-base font-medium text-white hover:bg-orange-600"
                 >
-                Contact Me 🙋🏻‍♂️ 
+                  Contact Me 🙋🏻‍♂️
                 </a>
               </div>
 
