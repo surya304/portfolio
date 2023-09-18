@@ -32,7 +32,7 @@ a {
 
 }
 
-@media (min-width: 380px) {
+@media (max-width: 450px) {
 
   .wrapstyle{
   
