@@ -99,7 +99,6 @@ export default function Example() {
           ))}
         </div>
 
-        {/* https://www.linkedin.com/in/jeevankumarkaree/recent-activity/shares/ */}
 
 
         <div className="bg-white">

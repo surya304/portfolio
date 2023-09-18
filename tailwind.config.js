@@ -12,12 +12,12 @@ module.exports = {
         Raleway: ["Raleway", ...defaultTheme.fontFamily.sans],
         Poppins: ["Poppins", ...defaultTheme.fontFamily.sans],
         Montserrat: ["Montserrat", ...defaultTheme.fontFamily.sans],
-        Pacifico: ["Pacifico", ...defaultTheme.fontFamily.sans],
-        Ubuntu: ["Ubuntu", ...defaultTheme.fontFamily.sans],
-        Shrikhand: ["Shrikhand", ...defaultTheme.fontFamily.sans],
-        Exo: ["Exo", ...defaultTheme.fontFamily.sans],
       },
     },
   },
-  plugins: [],
-}
+  plugins: [
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/aspect-ratio"),
+    require("@tailwindcss/typography"),
+  ],
+};
