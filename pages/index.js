@@ -348,7 +348,8 @@ export default function Example() {
                 <span className="block text-white bg-orange-600 rounded-2xl px-2 sm:px-6 py-1 sm:py-3 xl:inline font-pacifico">Sai Surya</span>
               </h1>
               <p className="text-left mt-3 max-w-md text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-2xl">
-                I am a Full Stack Web Developer,worked for 4 different startups.
+                I am a Front End Web Developer , worked for 4 different startups.
+               I Really Love Bringing Designs to Life with Code .
               </p>
 
 
@@ -507,9 +508,9 @@ export default function Example() {
                     About Me
                   </h2>
                   <p className="text-lg leading-7 ">
-                    I am a Full Stack Developer located in Brantford ,Ontario Canada.<br />
+                    I am a Front End Developer located in Brantford ,Ontario Canada.<br />
                     In 2018, after My Degree With Computer Science and Love for Design I started working in a Startup Developing websites and Web APplicatons
-                    From a UI Developer To a Full Stack Developer That Was a Truly Amazing Journey.
+                    From a UI Developer To a Front End Developer That Was a Truly Amazing Journey.
                   </p>
                   <p className="text-lg leading-7">
                     In 2018, I Have Expertice in Developing web applications using technologies like <b>HTML5, CSS3, JavaScript, jQuery, Vue.js, Nuxt, Angular, Next.js, React, Bootstrap, Tailwind CSS, Node.js, MongoDB, Webflow, Wordpress, and Amazon Web Services (AWS).</b>
