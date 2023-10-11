@@ -32,6 +32,18 @@ a {
 
 }
 
+
+*{
+  outline: orange dotted 1px;
+}
+.custom-text-color{
+  color: #8fdcc2;
+}
+
+.custom-selected{
+  background-color: #d4ede4;
+}
+
 @media (max-width: 450px) {
 
   .wrapstyle{
