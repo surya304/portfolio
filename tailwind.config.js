@@ -13,11 +13,13 @@ module.exports = {
         Poppins: ["Poppins", ...defaultTheme.fontFamily.sans],
         Montserrat: ["Montserrat", ...defaultTheme.fontFamily.sans],
       },
+ 
     },
   },
   plugins: [
     require("@tailwindcss/forms"),
     require("@tailwindcss/aspect-ratio"),
     require("@tailwindcss/typography"),
+
   ],
 };

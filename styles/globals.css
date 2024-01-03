@@ -256,6 +256,21 @@ font-family: 'Shrikhand', cursive;
   height: 80%;
   overflow: hidden;
 }
+
+.icon-style{
+
+  background-color:#8fdcc2; 
+
+}
+
+.icon-style:hover{
+  background-color: #fff;
+}
+
+.text-white-500{
+  color: #fff;
+  font-weight: 500;
+}
 @media only screen and (max-width: 600px) {
   .circles_h_80{
     position: relative;

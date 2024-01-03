@@ -1,9 +1,11 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import Navigation from '../components/Navigation'
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const navigation = [
-  { name: 'Work', href: '#' , current: true },
+  { name: 'Work', href: '#', current: true },
   { name: 'About', href: '#', current: false },
   { name: 'Contact', href: '#', current: false },
 ]
@@ -13,91 +15,19 @@ function classNames(...classes) {
 }
 
 export default function Example() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [loaded, setLoaded] = useState(false);
 
+  useEffect(() => {
+    setLoaded(true);
+  }, []);
   return (
     <div className="bg-custom">
-      <header className="absolute inset-x-0 top-0 z-50">
-        <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
-          <div className="flex lg:flex-1">
-          
-          </div>
-          <div className="flex lg:hidden">
-            <button
-              type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 custom-text-color"
-              onClick={() => setMobileMenuOpen(true)}
-            >
-              <span className="sr-only">Open main menu</span>
-              <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-            </button>
-          </div>
-          <div className="hidden lg:flex lg:gap-x-12">
-            {navigation.map((item) => (
-              // <a key={item.name} href={item.href} className="text-lg font-semibold leading-6 custom-text-color">
-              //   {item.name}
-              // </a>
+      <Navigation navigation={navigation} />
 
-
-<a
-                        key={item.name}
-                        href={item.href}
-                        className={classNames(
-                          item.current ? 'custom-selected text-black' : ' custom-text-color hover:text-underlined',
-                          'rounded-full px-3 py-2 text-lg font-medium'
-                        )}
-                        aria-current={item.current ? 'page' : undefined}
-                      >
-                        {item.name}
-                      </a>
-            ))}
-
-
-          </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          
-          </div>
-        </nav>
-        <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-          <div className="fixed inset-0 z-50" />
-          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-custom px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-            <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
-             
-              </a>
-              <button
-                type="button"
-                className="-m-2.5 rounded-md p-2.5 custom-text-color "
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                <span className="sr-only">Close menu</span>
-                <XMarkIcon className="h-6 w-6" aria-hidden="true" />
-              </button>
-            </div>
-            <div className="mt-6 flow-root">
-              <div className="-my-6 divide-y divide-gray-500/10">
-                <div className="space-y-2 py-6">
-                  {navigation.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 custom-text-color"
-                    >
-                      {item.name}
-                    </a>
-                  ))}
-                </div>
-             
-              </div>
-            </div>
-          </Dialog.Panel>
-        </Dialog>
-      </header>
 
       <div className="relative isolate px-6 pt-14 lg:px-8">
 
-      <div
+        <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"
         >
@@ -113,19 +43,21 @@ export default function Example() {
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"
         >
-       
+
         </div>
         <div className="mx-auto max-w-6xl py-32 sm:py-48 lg:py-56">
-      
+
           <div className="text-center">
-            <h1 className="text-6xl font-bold tracking-tight custom-text-color text-center sm:text-8xl relative" >
-            Hi. I am Sai Surya.
-            <span className='absolute right-4 top-[-50px]'>
+            {/* <h1 className="text-6xl font-bold tracking-tight custom-text-color text-center sm:text-8xl relative" > */}
+            <h1 className={`text-6xl font-bold tracking-tight custom-text-color text-center sm:text-8xl ${loaded ? 'translate-y-0' : 'translate-y-full'} transition-transform duration-1000`}>
 
-                    <img src='/images/star.png' className="h-10 w-10 mt-5 mx-auto sm:h-20 sm:w-20" alt='start' />
+              Hi. I am Sai Surya.
+              <span className='absolute right-4 top-[-50px]'>
 
-  
-</span>
+                <img src='/images/star.png' className="h-10 w-10 mt-5 mx-auto sm:h-20 sm:w-20" alt='start' />
+
+
+              </span>
 
 
 
@@ -134,22 +66,36 @@ export default function Example() {
 
 
 
-            <h1 className="relative mt-5 text-6xl font-bold tracking-tight custom-text-color text-center sm:text-8xl" >
-            A Front End Developer.
-            <span className='absolute left-0 bottom-[-80px]'>
+            <h1 className=
+              {`relative mt-5 text-6xl font-bold tracking-tight custom-text-color text-center sm:text-8xl ${loaded ? 'translate-y-5' : 'translate-y-full'} transition-transform duration-1000`}
+            >
 
-<img src='/images/star.png' className="h-10 w-10 mt-5 mx-auto sm:h-20 sm:w-20" alt='start' />
+              A Front End Developer.
+              <span className='absolute left-0 bottom-[-80px]'>
+
+                <img src='/images/star.png' className="h-10 w-10 mt-5 mx-auto sm:h-20 sm:w-20" alt='start' />
 
 
-</span>
+              </span>
 
 
-              </h1>
-            <p className=" mt-20 text-lg leading-8 custom-text-color font-semibold ">
-            Transforming Ideas into Reality Using Code and Imagination
-
+            </h1>
+            <p className={` mt-20 text-lg leading-8 custom-text-color font-semibold ${loaded ? 'translate-y-5' : 'translate-y-full'} transition-transform duration-1000 `}>
+            I am a Front End Web Developer , worked for 4 different startups. I Really Love Bringing Designs to Life with Code .
             </p>
-       
+
+
+            <div className="flex justify-center space-x-4 mt-10">
+              <a href="https://github.com/surya304" target='_blank' rel="noreferrer" className="icon-style text-2xl text-black-500 rounded-full p-2 transition-colors duration-200 w-10">
+                <FaGithub />
+              </a>
+              <a href="https://www.linkedin.com/in/surya304" target='_blank' rel="noreferrer" className="icon-style text-2xl text-black-500 rounded-full p-2 transition-colors duration-200 w-10">
+                <FaLinkedin />
+              </a>
+              <a href="mailto:ksaisurya304@gmail.com" target='_blank' rel="noreferrer" className="icon-style text-2xl text-black-500 rounded-full p-2 transition-colors duration-200 w-10">
+                <FaEnvelope />
+              </a>
+            </div>
           </div>
         </div>
         <div
