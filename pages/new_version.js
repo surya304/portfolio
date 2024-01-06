@@ -1,7 +1,11 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect,useRef } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Navigation from '../components/Navigation'
+import { Author } from '../components/Author'
+
+import { useInView } from 'react-intersection-observer';
+
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const navigation = [
@@ -9,6 +13,13 @@ const navigation = [
   { name: 'About', href: '#', current: false },
   { name: 'Contact', href: '#', current: false },
 ]
+const stats = [
+  { label: 'Developer Since', value: '2018' },
+  { label: 'Companies', value: '3' },
+  { label: 'Experience', value: '3+' },
+  { label: 'Projects worked', value: '25+' },
+]
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -17,15 +28,23 @@ function classNames(...classes) {
 export default function Example() {
   const [loaded, setLoaded] = useState(false);
 
+
+
   useEffect(() => {
     setLoaded(true);
+
+
   }, []);
+
+
+
+
   return (
     <div className="bg-custom">
       <Navigation navigation={navigation} />
 
 
-      <div className="relative isolate px-6 pt-14 lg:px-8">
+      <div className="relative isolate px-6 pt-14 lg:px-8" >
 
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -45,7 +64,7 @@ export default function Example() {
         >
 
         </div>
-        <div className="mx-auto max-w-6xl py-32 sm:py-48 lg:py-56">
+        <div className="mx-auto max-w-6xl py-32 sm:py-48 lg:py-48">
 
           <div className="text-center">
             {/* <h1 className="text-6xl font-bold tracking-tight custom-text-color text-center sm:text-8xl relative" > */}
@@ -86,8 +105,8 @@ export default function Example() {
 
 
             <div className="flex justify-center space-x-4 mt-10">
-              <a href="https://github.com/surya304" target='_blank' rel="noreferrer" className="icon-style text-2xl text-black-500 rounded-full p-2 transition-colors duration-200 w-10">
-                <FaGithub />
+              <a href="https://github.com/surya304" target='_blank' rel="noreferrer" className="icon-style  text-2xl text-black-500 rounded-full p-2 transition-colors duration-200 w-10">
+                <FaGithub className='cursor-pointer'/>
               </a>
               <a href="https://www.linkedin.com/in/surya304" target='_blank' rel="noreferrer" className="icon-style text-2xl text-black-500 rounded-full p-2 transition-colors duration-200 w-10">
                 <FaLinkedin />
@@ -111,6 +130,59 @@ export default function Example() {
           />
         </div>
       </div>
+
+
+      {/* <div className="relative bg-slate-50 sm:py-16 py-2">
+          <div className="absolute inset-x-0 top-0 hidden h-1/2 bg-gray-50 lg:block" aria-hidden="true" />
+          <div className="mx-auto max-w-full bg-slate-50 lg:bg-transparent lg:px-8 py-4 sm:py-0">
+            <div className="lg:grid lg:grid-cols-12">
+              <div className="relative z-10 lg:col-span-4 lg:col-start-1 lg:row-start-1 lg:bg-transparent lg:py-16 hidden sm:block">
+                <div className="absolute inset-x-0 h-1/2 bg-gray-50 lg:hidden" aria-hidden="true" />
+                <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-none lg:p-0">
+                  <div className="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
+                    <img
+                      className="rounded-3xl object-cover object-center "
+                      src="/images/profile1.jpg"
+                      alt="About Me"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className="relative bg-slate-50 lg:col-span-10 lg:col-start-4 lg:row-start-1 lg:grid lg:grid-cols-12 lg:items-center lg:rounded-3xl">
+              
+                <div className="relative mx-auto max-w-md space-y-6 py-12 px-4 sm:max-w-5xl sm:py-16 sm:px-6 lg:col-span-6 lg:col-start-4 lg:p-0">
+                  <h2 className="text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl" id="join-heading">
+                    About Me
+                  </h2>
+                  <p className="text-lg leading-7 ">
+                    I am a Front End Developer located in Brantford ,Ontario Canada.<br />
+                    In 2018, after My Degree With Computer Science and Love for Design I started working in a Startup Developing websites and Web APplicatons
+                    From a UI Developer To a Front End Developer That Was a Truly Amazing Journey.
+                  </p>
+                  <p className="text-lg leading-7">
+                    In 2018, I Have Expertice in Developing web applications using technologies like <b>HTML5, CSS3, JavaScript, jQuery, Vue.js, Nuxt, Angular, Next.js, React, Bootstrap, Tailwind CSS, Node.js, MongoDB, Webflow, Wordpress, and Amazon Web Services (AWS).</b>
+                  </p>
+                
+                  <div className="mt-10">
+                    <dl className="grid grid-cols-2 gap-x-4 gap-y-8">
+                      {stats.map((stat) => (
+                        <div key={stat.label} className="border-t-2 border-orange-600 pt-6">
+                          <dt className="text-base font-medium text-gray-500">{stat.label}</dt>
+                          <dd className="text-3xl font-bold tracking-tight text-gray-900">{stat.value}</dd>
+                        </div>
+                      ))}
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> */}
+
+<div className={`relative isolate px-6 pt-14 lg:px-8 `} >
+      <Author />
+    </div>
     </div>
   )
 }

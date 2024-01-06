@@ -242,14 +242,15 @@ const perks = [
     imageUrl: 'https://tailwindui.com/img/ecommerce/icons/icon-planet-light.svg',
     description: 'We’ve pledged 1% of sales to the preservation and restoration of the natural environment.',
   },
-]
+];
 
 const stats = [
   { label: 'Developer Since', value: '2018' },
   { label: 'Companies', value: '3' },
   { label: 'Experience', value: '3+' },
   { label: 'Projects worked', value: '25+' },
-]
+];
+
 
 const features2 = [
 

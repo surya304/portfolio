@@ -35,7 +35,9 @@ a {
 
 }
 
-
+.bg-custom-2{
+  background-color: #8fdcc2;
+}
 
 .custom-text-color{
   color: #8fdcc2;
@@ -261,6 +263,27 @@ font-family: 'Shrikhand', cursive;
 
   background-color:#8fdcc2; 
 
+}
+
+.bg-custom-back{
+  background-color: #8fdcc2;
+}
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgba(0, 0, 0, var(--tw-border-opacity));
+}
+/* Small devices (640px and up) */
+@media (min-width: 440px) {
+  .sm-rounded-6xl {
+    border-radius: 3rem; /* This is an approximation, as Tailwind's 6xl border radius is actually quite large */
+  }
+}
+
+/* Large devices (1024px and up) */
+@media (min-width: 1024px) {
+  .lg-rounded-8xl {
+    border-radius: 4rem; /* This is an approximation, as Tailwind's 8xl border radius is actually quite large */
+  }
 }
 
 .icon-style:hover{
