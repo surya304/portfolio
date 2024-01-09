@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Salsa';
+  src: url('../public/static/fonts/Salsa/Salsa-Regular.ttf') format('truetype');
+}
+
+.title-font {
+  font-family: 'Salsa', sans-serif;
+}
+
 /*     --color-green800: hsla(158, 23%, 18%, 1);
  */
 

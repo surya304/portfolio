@@ -13,8 +13,8 @@ function Navigation({ navigation }) {
 
 
     return (
-        <header className="absolute inset-x-0 top-0 z-50">
-            <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+        <header className=" inset-x-0 z-50 sticky top-0" style={{zIndex:'1000'}} >
+            <nav className="flex items-center justify-between p-6 lg:px-8 " aria-label="Global" >
                 <div className="flex lg:flex-1">
 
                 </div>
@@ -25,10 +25,10 @@ function Navigation({ navigation }) {
                         onClick={() => setMobileMenuOpen(true)}
                     >
                         <span className="sr-only">Open main menu</span>
-                        <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+                        {mobileMenuOpen ?  <XMarkIcon className="h-6 w-6" aria-hidden="true" /> : <Bars3Icon className="h-6 w-6" aria-hidden="true" />}
                     </button>
                 </div>
-                <div className="hidden lg:flex lg:gap-x-12">
+                <div className="hidden lg:flex lg:gap-x-12 p-3" style={{background:'hsla(158, 23%, 18%, .7)',backdropFilter:'blur(20px) saturate(1.7)',borderRadius:'30px'}}>
                     {navigation.map((item) => (
 
 
@@ -65,7 +65,8 @@ function Navigation({ navigation }) {
                             onClick={() => setMobileMenuOpen(false)}
                         >
                             <span className="sr-only">Close menu</span>
-                            <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                            {mobileMenuOpen ?  <XMarkIcon className="h-6 w-6" aria-hidden="true" /> : <Bars3Icon className="h-6 w-6" aria-hidden="true" />}
+
                         </button>
                     </div>
                     <div className="mt-6 flow-root">

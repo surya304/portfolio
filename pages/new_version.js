@@ -1,6 +1,5 @@
 import { useState, useEffect,useRef } from 'react'
-import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+
 import Navigation from '../components/Navigation'
 import { Author } from '../components/Author'
 
@@ -100,7 +99,7 @@ export default function Example() {
 
             </h1>
             <p className={` mt-20 text-lg leading-8 custom-text-color font-semibold ${loaded ? 'translate-y-5' : 'translate-y-full'} transition-transform duration-1000 `}>
-            I am a Front End Web Developer , worked for 4 different startups. I Really Love Bringing Designs to Life with Code .
+            I Really Love Bringing Designs to Life with Code .
             </p>
 
 
