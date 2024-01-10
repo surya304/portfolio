@@ -65,7 +65,7 @@ export function Author() {
             <p className="mt-4 text-lg tracking-tight text-slate-700">
             My passion for design and crafting beautiful user interfaces led me into the world of coding. I began my journey at a startup, initially focusing on developing websites and web applications as a UI developer. Over time, I transitioned to become a front-end developer and eventually a junior full-stack developer.
 
-Working within the same team for four years has been an incredible experience. Together, we've embarked on the creation of three distinct startups, each venture adding its own unique chapter to our collective journey. The collaborative spirit and creative synergy within the team have made this journey truly remarkable.
+Working within the same team for four years has been an incredible experience. Together, we ve embarked on the creation of three distinct startups, each venture adding its own unique chapter to our collective journey. The collaborative spirit and creative synergy within the team have made this journey truly remarkable.
             </p>
           
 
