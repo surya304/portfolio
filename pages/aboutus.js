@@ -41,6 +41,14 @@ const AboutUs = () => {
 
   </h1>
 
+  <h1 className={`title-font text-6xl font-bold tracking-tight custom-text-color text-center sm:text-6xl ${loaded ? 'translate-y-0' : 'translate-y-full'} transition-transform duration-1000`}>
+
+  
+About Me
+
+
+
+</h1>
 
 
 
