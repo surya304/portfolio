@@ -3,6 +3,12 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Dialog } from '@headlessui/react'
 import { useState } from 'react'
 
+const navigation = [
+    { name: 'Work', href: '/new_version', current: true },
+    { name: 'About', href: '/aboutus', current: false },
+    { name: 'Contact', href: '#', current: false },
+  ]
+;
 function Navigation({ navigation }) {
     function classNames(...classes) {
         return classes.filter(Boolean).join(' ')

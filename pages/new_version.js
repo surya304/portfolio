@@ -8,8 +8,8 @@ import { useInView } from 'react-intersection-observer';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const navigation = [
-  { name: 'Work', href: '#', current: true },
-  { name: 'About', href: '#', current: false },
+  { name: 'Work', href: '/new_version', current: true },
+  { name: 'About', href: '/aboutus', current: false },
   { name: 'Contact', href: '#', current: false },
 ]
 const stats = [
@@ -63,7 +63,7 @@ export default function Example() {
         >
 
         </div>
-        <div className="mx-auto max-w-6xl py-32 sm:py-48 lg:py-48">
+        <div className="mx-auto max-w-6xl py-10 ">
 
           <div className="text-center">
             {/* <h1 className="text-6xl font-bold tracking-tight custom-text-color text-center sm:text-8xl relative" > */}

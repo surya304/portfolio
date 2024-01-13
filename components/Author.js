@@ -49,7 +49,7 @@ export function Author() {
             <Image
               className="absolute inset-0 h-full w-full object-cover box-shadow-2xl"
               src={authorImage}
-              alt=""
+              alt="Profile Picture"
               sizes="(min-width: 1024px) 18rem, (min-width: 768px) 16rem, 11rem"
             />
           </div>
