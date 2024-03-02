@@ -422,8 +422,8 @@ export default function Example() {
             </div>
           </div>
           <div className="relative flex items-center w-full sm:h-full lg:absolute lg:inset-y-0 sm:right-40  lg:w-1/3 " >
-            {/* <image className="object-cover" src="/images/profile.jpg" alt="Web Application Developer"   /> */}
-            <image 
+            {/* <img   className="object-cover" src="/images/profile.jpg" alt="Web Application Developer"   /> */}
+            <img   
               className="rounded-3xl object-cover object-center shadow-2xl h-full"
               src="/images/profile.jpg"
               alt="About Me"
@@ -448,7 +448,7 @@ export default function Example() {
                 <div className="absolute inset-x-0 h-1/2 bg-gray-50 lg:hidden" aria-hidden="true" />
                 <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-none lg:p-0">
                   <div className="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
-                    <image 
+                    <img   
                       className="rounded-3xl object-cover object-center "
                       src="/images/profile1.jpg"
                       alt="About Me"
@@ -542,57 +542,57 @@ export default function Example() {
           <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-4 sm:grid-cols-2 gap-6 sm:gap-2 md:grid-cols-11 lg:grid-cols-11">
               <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                <image className="h-10 grayscale hover:grayscale-0" src="/logos/html.svg" alt="HTML" />
+                <img   className="h-10 grayscale hover:grayscale-0" src="/logos/html.svg" alt="HTML" />
               </div>
               <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                <image className="h-10 grayscale hover:grayscale-0" src="/logos/javascript.svg" alt="JavaScript" />
+                <img   className="h-10 grayscale hover:grayscale-0" src="/logos/javascript.svg" alt="JavaScript" />
               </div>
               <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                <image className="h-11 grayscale hover:grayscale-0" src="/logos/react.svg" alt="React" />
+                <img   className="h-11 grayscale hover:grayscale-0" src="/logos/react.svg" alt="React" />
               </div>
               <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                <image className="h-10 grayscale hover:grayscale-0" src="/logos/next.svg" alt="Next.js" />
+                <img   className="h-10 grayscale hover:grayscale-0" src="/logos/next.svg" alt="Next.js" />
               </div>
               <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                <image className="h-10 grayscale hover:grayscale-0" src="/logos/nuxt.svg" alt="Nuxt.js" />
+                <img   className="h-10 grayscale hover:grayscale-0" src="/logos/nuxt.svg" alt="Nuxt.js" />
               </div>
               <div className="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
-                <image 
+                <img   
                   className="h-10 grayscale hover:grayscale-0"
                   src="/logos/vue.svg"
                   alt="Vue Js"
                 />
               </div>
               <div className="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
-                <image 
+                <img   
                   className="h-10 grayscale hover:grayscale-0"
                   src="/logos/angular.svg"
                   alt="Angular"
                 />
               </div>
               <div className="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
-                <image 
+                <img   
                   className="h-10 grayscale hover:grayscale-0"
                   src="/logos/jquery.svg"
                   alt="jquery"
                 />
               </div>
               <div className="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
-                <image 
+                <img   
                   className="h-10 grayscale hover:grayscale-0"
                   src="/logos/css.svg"
                   alt="CSS"
                 />
               </div>
               <div className="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
-                <image 
+                <img   
                   className="h-12 grayscale hover:grayscale-0"
                   src="/logos/tailwind.svg"
                   alt="Tailwind CSS"
                 />
               </div>
               <div className="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
-                <image 
+                <img   
                   className="h-10 grayscale hover:grayscale-0"
                   src="/logos/bootstrap.svg"
                   alt="Bootstrap 5"
@@ -694,7 +694,7 @@ export default function Example() {
                           </p>
                         </div>
                         <div className="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[75rem]">
-                          <Image
+                          <img  
                             className="w-full"
                             src={feature.image}
                             alt={feature.title}
@@ -733,7 +733,7 @@ export default function Example() {
                   <div className="relative flex-1 px-6 pt-12 pb-8 md:px-6">
                     <div className="absolute top-0 inline-block -translate-y-1/2 -translate-x-2 transform rounded-xl w-32 h-12 overflow-hidden px-2 bg-white shadow-md">
                       {/* <post.icon className="h-6 w-6 text-white" aria-hidden="true" /> */}
-                      <image className="h-full w-full object-contain bg-white" src={post.imageUrl} alt={post.website} />
+                      <img   className="h-full w-full object-contain bg-white" src={post.imageUrl} alt={post.website} />
 
                     </div>
                     <h3 className="text-lg font-semibold text-gray-800">{post.title}</h3>
@@ -786,27 +786,27 @@ export default function Example() {
                   </svg>
                 </div>
                 <div className="col-span-1 flex justify-center grayscale hover:grayscale-0 items-center space-x-4 bg-slate-50 hover:bg-slate-50 hover:duration-500 py-8 px-8">
-                  <image className="max-h-8" src="/logos/vscode.svg" alt="Visual Studio Code" />
+                  <img   className="max-h-8" src="/logos/vscode.svg" alt="Visual Studio Code" />
                   <span className="font-semibold sm:text-md text-sm text-slate-800">Visual Studio Code</span>
                 </div>
                 <div className="col-span-1 flex justify-center grayscale hover:grayscale-0 bg-slate-50 hover:bg-slate-50 hover:duration-500 py-8 px-8">
-                  <image className="max-h-12" src="https://static.canva.com/web/images/12487a1e0770d29351bd4ce4f87ec8fe.svg" alt="Tuple" />
+                  <img   className="max-h-12" src="https://static.canva.com/web/images/12487a1e0770d29351bd4ce4f87ec8fe.svg" alt="Tuple" />
                 </div>
                 <div className="col-span-1 flex justify-center items-center grayscale hover:grayscale-0 bg-slate-50 hover:bg-slate-50 hover:duration-500 py-8 px-8">
 
-                  <image className="max-h-10" src="/logos/slack.png" alt="Slack" />
+                  <img   className="max-h-10" src="/logos/slack.png" alt="Slack" />
                   <span className="font-semibold sm:text-md text-lg text-slate-800">Slack</span>
 
                 </div>
                 <div className="col-span-1 flex justify-center items-center grayscale hover:grayscale-0 bg-slate-50 hover:bg-slate-50 hover:duration-500 py-8 px-8">
 
-                  <image className="max-h-12" src="/logos/webflow.svg" alt="Webflow" />
+                  <img   className="max-h-12" src="/logos/webflow.svg" alt="Webflow" />
                   <span className="font-semibold sm:text-md text-lg text-slate-800">Webflow</span>
 
                 </div>
 
                 <div className="col-span-1 flex justify-center items-center grayscale hover:grayscale-0 bg-slate-50 hover:bg-slate-50 hover:duration-500 py-8 px-8">
-                  <image 
+                  <img   
                     className="max-h-8"
                     src="/logos/figma.svg"
                     alt="Figma"

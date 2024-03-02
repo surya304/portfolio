@@ -7,7 +7,7 @@ function ToolsSection({ pic_src,company_title, width,height,children, ...props }
   return (
     <Section {...props}>
 
-<image 
+<img  
   src={pic_src} 
   alt="Company Picture" 
   width={width} 

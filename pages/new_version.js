@@ -1,4 +1,6 @@
 import { useState, useEffect,useRef } from 'react'
+import Image from 'next/image'
+
 
 import Navigation from '../components/Navigation'
 import { Author } from '../components/Author'
@@ -73,7 +75,7 @@ export default function Example() {
               Hi. I am Sai Surya.
               <span className='absolute right-4 top-[-50px]'>
 
-                <image  src='/images/star.png' className="h-10 w-10 mt-5 mx-auto sm:h-20 sm:w-20" alt='start' />
+                <Image  src='/images/star.png' className="h-10 w-10 mt-5 mx-auto sm:h-20 sm:w-20" alt='start' width={100} height={100} />
 
 
               </span>
@@ -92,7 +94,7 @@ export default function Example() {
               A Front End Developer.
               <span className='absolute left-0 bottom-[-80px]'>
 
-                <image  src='/images/star.png' className="h-10 w-10 mt-5 mx-auto sm:h-20 sm:w-20" alt='start' />
+                <Image  src='/images/star.png' className="h-10 w-10 mt-5 mx-auto sm:h-20 sm:w-20" alt='start' width={100} height={100} />
 
 
               </span>
@@ -105,7 +107,7 @@ export default function Example() {
 
 
             <div className="flex justify-center space-x-4 mt-10">
-              <a href="https://github.com/surya304" target='_blank' rel="noreferrer" className="icon-style text-2xl text-black-500 rounded-full p-2 transition-colors duration-200 w-10 cursor-pointer">
+              <a href="https://github.com/surya304" target='_blank' rel="noreferrer" className="icon-style text-2xl text-black-500 rounded-full p-2 transition-colors duration-200 w-10 ">
                 <FaGithub className='cursor-pointer'/>
               </a>
               <a href="https://www.linkedin.com/in/surya304" target='_blank' rel="noreferrer" className="icon-style text-2xl text-black-500 rounded-full p-2 transition-colors duration-200 w-10">
