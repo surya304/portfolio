@@ -2,6 +2,7 @@ import { useState, useEffect,useRef } from 'react'
 
 import Navigation from '../components/Navigation'
 import { Author } from '../components/Author'
+import {Experience} from '../components/Experience'
 
 import { useInView } from 'react-intersection-observer';
 
@@ -104,7 +105,7 @@ export default function Example() {
 
 
             <div className="flex justify-center space-x-4 mt-10">
-              <a href="https://github.com/surya304" target='_blank' rel="noreferrer" className="icon-style  text-2xl text-black-500 rounded-full p-2 transition-colors duration-200 w-10">
+              <a href="https://github.com/surya304" target='_blank' rel="noreferrer" className="icon-style text-2xl text-black-500 rounded-full p-2 transition-colors duration-200 w-10 cursor-pointer">
                 <FaGithub className='cursor-pointer'/>
               </a>
               <a href="https://www.linkedin.com/in/surya304" target='_blank' rel="noreferrer" className="icon-style text-2xl text-black-500 rounded-full p-2 transition-colors duration-200 w-10">
@@ -182,6 +183,15 @@ export default function Example() {
 <div className={`relative isolate px-6 pt-14 lg:px-8 `} >
       <Author />
     </div>
+
+    
+
+    <div className={`relative isolate px-6 pt-14 pb-14 lg:px-8 `} >
+<Experience />
+
+    </div>
+
+
     </div>
   )
 }

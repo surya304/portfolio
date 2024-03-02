@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { GridPattern } from './GridPattern'
 import { SectionHeading } from './SectionHeading'
 import authorImage from '../public/images/profile_pic.jpg'
+import { useRouter } from 'next/router'
 
 
 
@@ -14,6 +15,13 @@ export function Author() {
         { label: 'Experience', value: '3+' },
         { label: 'Projects worked', value: '25+' },
       ];
+
+      const router = useRouter()
+
+      const handleRedirect = () => {
+        router.push('/aboutus')
+      }
+    
   return (
     <section
       id="author"
@@ -81,12 +89,14 @@ Working within the same team for four years has been an incredible experience. T
                   </div>
 
                   <p className="mt-8">
-              <Link
-                href="#"
-                className="inline-flex items-center text-base font-medium tracking-tight text-blue-600"
-              >
-                <span className="ml-4">Read More</span>
-              </Link>
+           
+
+              <button 
+                              className="inline-flex items-center text-base font-medium tracking-tight text-blue-600"
+              onClick={handleRedirect}>
+                Read More
+              </button>
+
             </p>
           </div>
         </div>

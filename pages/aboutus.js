@@ -55,7 +55,7 @@ const AboutUs = () => {
             </p>
       
           <p className="mt-8">
-          I&apos;ve been working with this awesome group for almost 4 years now. It all began as an intern, and then I moved to working full time, learning and figuring out how to grow the company one day at a time. Working in a startup means dedicating your time to building and trying to make the product better every day. Whether it's coming up with new ideas, finding easier ways to onboard users, or improving the overall user experience, it's been a unique and amazing journey.
+          I&apos;ve been working with this awesome group for almost 4 years. It all began as an intern, and then I moved to working full time, learning and figuring out how to grow the company one day at a time. Working in a startup means dedicating your time to building and trying to make the product better every day. Whether it's coming up with new ideas, finding easier ways to onboard users, or improving the overall user experience, it's been a unique and amazing journey.
 
 
           </p>
@@ -78,7 +78,7 @@ const AboutUs = () => {
           />
           <figcaption className="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
             <InformationCircleIcon className="mt-0.5 h-5 w-5 flex-none text-gray-300" aria-hidden="true" />
-          Team That I Worked With For 4 years
+          Team that i worked with( 2018 - 2022)
           </figcaption>
         </figure>
           <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">As a developer</h2>
