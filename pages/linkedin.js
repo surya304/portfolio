@@ -120,7 +120,7 @@ export default function Example() {
                         </div>
                     </div>
                     <div className="aspect-w-5 aspect-h-3 -mt-6 md:aspect-w-2 md:aspect-h-1">
-                        <img
+                        <image 
                         className="translate-x-6 translate-y-6 transform rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-16"
                         src="/images/linkedin_prof.png"
                         alt="LinkedIn Profile"

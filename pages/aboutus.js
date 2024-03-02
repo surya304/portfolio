@@ -55,7 +55,7 @@ const AboutUs = () => {
             </p>
       
           <p className="mt-8">
-          I&apos;ve been working with this awesome group for almost 4 years. It all began as an intern, and then I moved to working full time, learning and figuring out how to grow the company one day at a time. Working in a startup means dedicating your time to building and trying to make the product better every day. Whether it's coming up with new ideas, finding easier ways to onboard users, or improving the overall user experience, it's been a unique and amazing journey.
+          I&apos;ve been working with this awesome group for almost 4 years. It all began as an intern, and then I moved to working full time, learning and figuring out how to grow the company one day at a time. Working in a startup means dedicating your time to building and trying to make the product better every day. Whether it&apos;s coming up with new ideas, finding easier ways to onboard users, or improving the overall user experience, it&apos;s been a unique and amazing journey.
 
 
           </p>
@@ -71,7 +71,7 @@ const AboutUs = () => {
             </p>
 
             <figure className="mt-16">
-          <img
+          <image
             className="aspect-video rounded-xl bg-gray-50 object-cover"
             src="./images/group_pic.jpg"
             alt="groupImage"
@@ -121,7 +121,7 @@ const AboutUs = () => {
 
 
           <p className="mt-6">
-          I’m a team player, with my background in engineering and art, I feel comfortable interacting with both the technically oriented people of the team as well as the artistically oriented ones. I will always go the extra mile to help my team.          
+          I&apos;m a team player, with my background in engineering and art, I feel comfortable interacting with both the technically oriented people of the team as well as the artistically oriented ones. I will always go the extra mile to help my team.          
           </p>
 
           <p className="mt-6">
@@ -132,7 +132,7 @@ const AboutUs = () => {
           <p className="mt-6">
           My experience working for a small startup gave me exposure to the business side of a tech company, while at the same time delivering industry standard results on the production side. I have lead projects and Delivered the Results .          
           
-          If you are Interested after hearing this and want to know more about me . I'd love to hear from you 
+          If you are Interested after hearing this and want to know more about me . I&apos;d love to hear from you 
           </p>
 
 

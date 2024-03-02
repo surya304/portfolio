@@ -73,7 +73,7 @@ export default function Example() {
               Hi. I am Sai Surya.
               <span className='absolute right-4 top-[-50px]'>
 
-                <img src='/images/star.png' className="h-10 w-10 mt-5 mx-auto sm:h-20 sm:w-20" alt='start' />
+                <image  src='/images/star.png' className="h-10 w-10 mt-5 mx-auto sm:h-20 sm:w-20" alt='start' />
 
 
               </span>
@@ -92,7 +92,7 @@ export default function Example() {
               A Front End Developer.
               <span className='absolute left-0 bottom-[-80px]'>
 
-                <img src='/images/star.png' className="h-10 w-10 mt-5 mx-auto sm:h-20 sm:w-20" alt='start' />
+                <image  src='/images/star.png' className="h-10 w-10 mt-5 mx-auto sm:h-20 sm:w-20" alt='start' />
 
 
               </span>
@@ -140,7 +140,7 @@ export default function Example() {
                 <div className="absolute inset-x-0 h-1/2 bg-gray-50 lg:hidden" aria-hidden="true" />
                 <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-none lg:p-0">
                   <div className="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
-                    <img
+                    <image 
                       className="rounded-3xl object-cover object-center "
                       src="/images/profile1.jpg"
                       alt="About Me"

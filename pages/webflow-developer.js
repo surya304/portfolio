@@ -66,7 +66,7 @@ export default function Example() {
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <Link href="/">
                   <span className="sr-only">Your Company</span>
-                  {/* <img
+                  {/* <image 
                     className="h-10 w-full sm:h-14 rounded-full"
                     src="/images/logo.png"
                     alt=""
@@ -100,7 +100,7 @@ export default function Example() {
         <div className="px-4 sm:px-16 md:px-18 lg:px-20 xl:px-24">
           <h1 className="text-2xl font-bold tracking-tight text-slate-800 sm:text-3xl md:text-4xl lg:text-5xl flex items-center space-x-3">
             <span className="block xl:inline">Webflow Developer </span>
-            <img className="w-14 h-14 p-2 rounded-lg bg-indigo-100 shadow-xl" src="/logos/webflow.svg" alt="Webflow"  />
+            <image  className="w-14 h-14 p-2 rounded-lg bg-indigo-100 shadow-xl" src="/logos/webflow.svg" alt="Webflow"  />
             {/* <span className="block text-white bg-orange-600 rounded-2xl px-2 sm:px-6 py-1 sm:py-3 xl:inline font-pacifico"></span> */}
           </h1>
           <p className="text-left mt-3 max-w-md text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-2xl">
@@ -144,7 +144,7 @@ export default function Example() {
         </div>
       </div>
       <div className="relative h-96 flex items-center w-full sm:h-full lg:absolute lg:inset-y-0 lg:right-0 lg:h-full lg:w-1/2 ">
-        <img className=" w-full object-cover sm:mt-32 mt-8" src="/images/dp_11.png" alt="Webflow Developer"  />
+        <image  className=" w-full object-cover sm:mt-32 mt-8" src="/images/dp_11.png" alt="Webflow Developer"  />
       </div>
     </main>
 
@@ -156,7 +156,7 @@ export default function Example() {
             <div className="absolute inset-x-0 h-1/2 bg-gray-50 lg:hidden" aria-hidden="true" />
             <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-none lg:p-0">
               <div className="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
-                <img
+                <image 
                   className="rounded-3xl object-cover object-center shadow-2xl"
                   src="/images/k.jpg"
                   alt="About me"
