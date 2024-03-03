@@ -268,11 +268,7 @@ font-family: 'Shrikhand', cursive;
   overflow: hidden;
 }
 
-.icon-style{
 
-  background-color:#8fdcc2; 
-
-}
 
 .bg-custom-back{
   background-color: #8fdcc2;
@@ -295,7 +291,13 @@ font-family: 'Shrikhand', cursive;
   }
 }
 
-.icon-style:hover{
+.icon_style{
+
+  background-color:#8fdcc2; 
+  cursor: pointer;
+
+}
+.icon_style:hover{
   background-color: #fff;
 }
 

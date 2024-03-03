@@ -49,11 +49,11 @@ export default function Example() {
       <div className="relative isolate px-6 pt-14 lg:px-8" >
 
         <div
-          className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+ className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"
         >
           <div
-            className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#00CC99] to-[#9089fc] opacity-60 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+   className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#00CC99] to-[#9089fc] opacity-60 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
             style={{
               clipPath:
                 'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
@@ -61,7 +61,7 @@ export default function Example() {
           />
         </div>
         <div
-          className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+ className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"
         >
 
@@ -79,13 +79,7 @@ export default function Example() {
 
 
               </span>
-
-
-
-
             </h1>
-
-
 
             <h1 className=
               {`relative mt-5 text-6xl font-bold tracking-tight custom-text-color text-center sm:text-8xl ${loaded ? 'translate-y-5' : 'translate-y-full'} transition-transform duration-1000`}
@@ -107,24 +101,24 @@ export default function Example() {
 
 
             <div className="flex justify-center space-x-4 mt-10">
-              <a href="https://github.com/surya304" target='_blank' rel="noreferrer" className="icon-style text-2xl text-black-500 rounded-full p-2 transition-colors duration-200 w-10 ">
+              <a href="https://github.com/surya304" target='_blank' rel="noreferrer" className="icon_style text-2xl text-black-500 rounded-full p-2 transition-colors duration-200 w-10 ">
                 <FaGithub className='cursor-pointer'/>
               </a>
-              <a href="https://www.linkedin.com/in/surya304" target='_blank' rel="noreferrer" className="icon-style text-2xl text-black-500 rounded-full p-2 transition-colors duration-200 w-10">
+              <a href="https://www.linkedin.com/in/surya304" target='_blank' rel="noreferrer" className="icon_style text-2xl text-black-500 rounded-full p-2 transition-colors duration-200 w-10">
                 <FaLinkedin />
               </a>
-              <a href="mailto:ksaisurya304@gmail.com" target='_blank' rel="noreferrer" className="icon-style text-2xl text-black-500 rounded-full p-2 transition-colors duration-200 w-10">
+              <a href="mailto:ksaisurya304@gmail.com" target='_blank' rel="noreferrer" className="icon_style text-2xl text-black-500 rounded-full p-2 transition-colors duration-200 w-10">
                 <FaEnvelope />
               </a>
             </div>
           </div>
         </div>
         <div
-          className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(80%-30rem)]"
+ className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(80%-30rem)]"
           aria-hidden="true"
         >
           <div
-            className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#00CC99] to-[#9089fc] opacity-60 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+   className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#00CC99] to-[#9089fc] opacity-60 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
             style={{
               clipPath:
                 'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
@@ -133,62 +127,77 @@ export default function Example() {
         </div>
       </div>
 
-
-      {/* <div className="relative bg-slate-50 sm:py-16 py-2">
-          <div className="absolute inset-x-0 top-0 hidden h-1/2 bg-gray-50 lg:block" aria-hidden="true" />
-          <div className="mx-auto max-w-full bg-slate-50 lg:bg-transparent lg:px-8 py-4 sm:py-0">
-            <div className="lg:grid lg:grid-cols-12">
-              <div className="relative z-10 lg:col-span-4 lg:col-start-1 lg:row-start-1 lg:bg-transparent lg:py-16 hidden sm:block">
-                <div className="absolute inset-x-0 h-1/2 bg-gray-50 lg:hidden" aria-hidden="true" />
-                <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-none lg:p-0">
-                  <div className="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
-                    <image 
-                      className="rounded-3xl object-cover object-center "
-                      src="/images/profile1.jpg"
-                      alt="About Me"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div className="relative bg-slate-50 lg:col-span-10 lg:col-start-4 lg:row-start-1 lg:grid lg:grid-cols-12 lg:items-center lg:rounded-3xl">
-              
-                <div className="relative mx-auto max-w-md space-y-6 py-12 px-4 sm:max-w-5xl sm:py-16 sm:px-6 lg:col-span-6 lg:col-start-4 lg:p-0">
-                  <h2 className="text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl" id="join-heading">
-                    About Me
-                  </h2>
-                  <p className="text-lg leading-7 ">
-                    I am a Front End Developer located in Brantford ,Ontario Canada.<br />
-                    In 2018, after My Degree With Computer Science and Love for Design I started working in a Startup Developing websites and Web APplicatons
-                    From a UI Developer To a Front End Developer That Was a Truly Amazing Journey.
-                  </p>
-                  <p className="text-lg leading-7">
-                    In 2018, I Have Expertice in Developing web applications using technologies like <b>HTML5, CSS3, JavaScript, jQuery, Vue.js, Nuxt, Angular, Next.js, React, Bootstrap, Tailwind CSS, Node.js, MongoDB, Webflow, Wordpress, and Amazon Web Services (AWS).</b>
-                  </p>
-                
-                  <div className="mt-10">
-                    <dl className="grid grid-cols-2 gap-x-4 gap-y-8">
-                      {stats.map((stat) => (
-                        <div key={stat.label} className="border-t-2 border-orange-600 pt-6">
-                          <dt className="text-base font-medium text-gray-500">{stat.label}</dt>
-                          <dd className="text-3xl font-bold tracking-tight text-gray-900">{stat.value}</dd>
-                        </div>
-                      ))}
-                    </dl>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
+    
 
 <div className={`relative isolate px-6 pt-14 lg:px-8 `} >
       <Author />
     </div>
 
     
-
-    <div className={`relative isolate px-6 pt-14 pb-14 lg:px-8 `} >
+    <div style={{'backgroundColor':'hsla(160, 52%, 71%, .1)'}}>
+          <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-4 sm:grid-cols-2 gap-6 sm:gap-2 md:grid-cols-11 lg:grid-cols-11">
+              <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+                <Image className="h-10 grayscale hover:grayscale-0" src="/logos/html.svg" alt="HTML" width={100} height={100} />
+              </div>
+              <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+                <Image className="h-10 grayscale hover:grayscale-0" width={100} height={100} src="/logos/javascript.svg" alt="JavaScript" />
+              </div>
+              <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+                <Image className="h-11 grayscale hover:grayscale-0" width={100} height={100} src="/logos/react.svg" alt="React" />
+              </div>
+              <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+                <Image className="h-10 grayscale hover:grayscale-0" width={100} height={100} src="/logos/next.svg" alt="Next.js" />
+              </div>
+              <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+                <Image className="h-10 grayscale hover:grayscale-0" width={100} height={100} src="/logos/nuxt.svg" alt="Nuxt.js" />
+              </div>
+              <div className="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
+                <Image    
+         className="h-10 grayscale hover:grayscale-0" width={100} height={100}
+                  src="/logos/vue.svg"
+                  alt="Vue Js"
+                />
+              </div>
+              <div className="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
+                <Image    
+         className="h-10 grayscale hover:grayscale-0" width={100} height={100}
+                  src="/logos/angular.svg"
+                  alt="Angular"
+                />
+              </div>
+              <div className="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
+                <Image    
+         className="h-10 grayscale hover:grayscale-0" width={100} height={100}
+                  src="/logos/jquery.svg"
+                  alt="jquery"
+                />
+              </div>
+              <div className="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
+                <Image    
+         className="h-10 grayscale hover:grayscale-0" width={100} height={100}
+                  src="/logos/css.svg"
+                  alt="CSS"
+                />
+              </div>
+              <div className="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
+                <Image    
+         className="h-12 grayscale hover:grayscale-0" width={100} height={100}
+                  src="/logos/tailwind.svg"
+                  alt="Tailwind CSS"
+                />
+              </div>
+              <div className="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
+                <Image    
+         className="h-10 grayscale hover:grayscale-0" width={100} height={100}
+                  src="/logos/bootstrap.svg"
+                  alt="Bootstrap 5"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+    <div className={`relative isolate px-6  pb-14 lg:px-8 `} >
 <Experience />
 
     </div>

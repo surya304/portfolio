@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState,useEffect } from 'react';
 import Navigation from '../components/Navigation';
+import Image from 'next/image';
 
 import { CheckCircleIcon, InformationCircleIcon } from '@heroicons/react/20/solid'
 
@@ -71,10 +72,11 @@ const AboutUs = () => {
             </p>
 
             <figure className="mt-16">
-          <image
+          <img
             className="aspect-video rounded-xl bg-gray-50 object-cover"
             src="./images/group_pic.jpg"
             alt="groupImage"
+       
           />
           <figcaption className="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
             <InformationCircleIcon className="mt-0.5 h-5 w-5 flex-none text-gray-300" aria-hidden="true" />
