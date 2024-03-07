@@ -13,6 +13,11 @@ import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 const navigation = [
   { name: 'Work', href: '/new_version', current: true },
   { name: 'About', href: '/aboutus', current: false },
+  {
+    name:'projects',
+    href:'/projects',
+    current:false
+  },
   { name: 'Contact', href: '#', current: false },
 ]
 const stats = [

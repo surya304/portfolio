@@ -18,9 +18,15 @@ const AboutUs = () => {
     }, []);
 
  const navigation = [
-  { name: 'Work', href: '/new_version', current: true },
-  { name: 'About', href: '/aboutus', current: false },
+  { name: 'Work', href: '/new_version', current: false },
+  { name: 'About', href: '/aboutus', current: true },
+  {
+    name:'projects',
+    href:'/projects',
+    current:false
+  },
   { name: 'Contact', href: '#', current: false },
+
 ];
 
 
