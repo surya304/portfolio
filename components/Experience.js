@@ -235,7 +235,7 @@ export function Experience() {
           </p> <p className="relative z-10 mt-1 text-sm text-zinc-600 dark:text-zinc-400" style={{ 'marginTop': '20px' }}>
             Leveraged MongoDB and AWS S3 to securely store sensitive medical patient data, implementing safety precautions.
           </p> <p className="relative z-10 mt-1 text-sm text-zinc-600 dark:text-zinc-400" style={{ 'marginTop': '20px' }}>
-            Embedded a payment gateway for secure financial transactions.
+            Embedded a payment gateway for secure financial transaction. 
           </p>
 
           <span className="isolate flex flex-wrap rounded-md shadow-sm">
