@@ -25,7 +25,7 @@ export function Header() {
                 </Link>
               </div>
               <div className="items-center justify-end md:flex md:flex-1 lg:w-0 md:space-x-8">
-                <Link href="https://www.linkedin.com/in/surya304/" className="cursor-pointer font-medium text-gray-500 hover:text-gray-900 hover:underline hover:text-orange-600">
+                <Link href="https://www.linkedin.com/in/surya185/" className="cursor-pointer font-medium text-gray-500 hover:text-gray-900 hover:underline hover:text-orange-600">
                   LinkedIn
                 </Link>
             

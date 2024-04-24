@@ -356,7 +356,7 @@ export default function Example() {
 
               <div className="mt-10 flex sm:justify-start  sm:space-x-6 space-x-2 wrapstyle">
                 <div className="">
-                  <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/surya304/" className="flex sm:w-full items-center justify-center rounded-md border border-transparent bg-[#007bb5] px-4 py-3 text-base font-medium text-white md:py-2 md:px-4 md:text-lg"
+                  <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/surya185/" className="flex sm:w-full items-center justify-center rounded-md border border-transparent bg-[#007bb5] px-4 py-3 text-base font-medium text-white md:py-2 md:px-4 md:text-lg"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" className='w-5 h-5'><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" /></svg>
                     &nbsp; Linkedin
@@ -826,7 +826,7 @@ export default function Example() {
             <div className="mt-8 flex justify-center">
               <div className="inline-flex rounded-md shadow">
                 <a
-                  target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/surya304/"
+                  target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/surya185/"
                   className="inline-flex cursor-pointer items-center justify-center rounded-md border border-transparent bg-orange-600 px-5 py-3 text-base font-medium text-white hover:bg-orange-600"
                 >
                   Contact Me 🙋🏻‍♂️

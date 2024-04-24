@@ -18,7 +18,7 @@ const navigation = [
     href:'/projects',
     current:false
   },
-  { name: 'Contact', href: '#', current: false },
+  { name: 'Contact', href: 'https://forms.gle/ApdM72hgZhHCCooc9', current: false },
 ]
 const stats = [
   { label: 'Developer Since', value: '2018' },
@@ -109,7 +109,7 @@ export default function Example() {
               <a href="https://github.com/surya304" target='_blank' rel="noreferrer" className="icon_style text-2xl text-black-500 rounded-full p-2 transition-colors duration-200 w-10 ">
                 <FaGithub className='cursor-pointer'/>
               </a>
-              <a href="https://www.linkedin.com/in/surya304" target='_blank' rel="noreferrer" className="icon_style text-2xl text-black-500 rounded-full p-2 transition-colors duration-200 w-10">
+              <a href="https://www.linkedin.com/in/surya185" target='_blank' rel="noreferrer" className="icon_style text-2xl text-black-500 rounded-full p-2 transition-colors duration-200 w-10">
                 <FaLinkedin />
               </a>
               <a href="mailto:ksaisurya304@gmail.com" target='_blank' rel="noreferrer" className="icon_style text-2xl text-black-500 rounded-full p-2 transition-colors duration-200 w-10">
