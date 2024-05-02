@@ -18,7 +18,7 @@ function ToolsSection({ pic_src, company_title, width, height, children, ...prop
       <h1 className="text-2xl mt-3 font-semibold tracking-tight text-zinc-800 dark:text-zinc-100 mb-5">
         {company_title}
       </h1>
-      <ul role="list" className="space-y-16">
+      <ul role="list" className="space-y-6">
         {children}
       </ul>
     </Section>
@@ -110,31 +110,36 @@ export function Experience() {
         <ToolsSection title="2021 - 2022" pic_src="images/videoform.webp" company_title='VideoForm' width={70} height={50} >
 
           <h2 className="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
-            full stack developer
+            Full stack developer
           </h2>
 
-          <p className="relative z-10 mt-1 text-sm text-zinc-600 dark:text-zinc-400" style={{ 'marginTop': '20px' }}>
 
-            Played a key role in planning, developing, and managing a web application from the ground up. Enhanced the application to align with company goals and client feedback.    </p>
-          <p className="relative z-10 mt-1 text-sm text-zinc-600 dark:text-zinc-400" style={{ 'marginTop': '20px' }}>
-            Designed, built, and launched a JavaScript chatbot widget that can be embedded in websites to provide customized video responses to users.
-          </p>
-          <p className="relative z-10 mt-1 text-sm text-zinc-600 dark:text-zinc-400" style={{ 'marginTop': '20px' }}>
-            Developed and integrated extensions with over 100 CRM platforms.
-          </p>
-          <p className="relative z-10 mt-1 text-sm text-zinc-600 dark:text-zinc-400" style={{ 'marginTop': '20px' }}>
-            Took ownership of understanding client analytics needs. Built an analytics module for clients to monitor engagement with their feedback forms.
-          </p>
-          <p className="relative z-10 mt-1 text-sm text-zinc-600 dark:text-zinc-400" style={{ 'marginTop': '20px' }}>
-            Solely responsible for developing an email messaging platform and associated analytics reporting.
-          </p>
-          <p className="relative z-10 mt-1 text-sm text-zinc-600 dark:text-zinc-400" style={{ 'marginTop': '20px' }}>
-            Streamlined processes for recording, storing, and uploading videos to major platforms.
-          </p>
-          <p className="relative z-10 mt-1 text-sm text-zinc-600 dark:text-zinc-400" style={{ 'marginTop': '20px' }}>
-            Collaborated on UI wireframes and interfaces to improve user experience.
-          </p>
+          <ul className="list-disc text-white pl-5 text-sm">
+  <li className="mb-3 ">
+    Played a key role in planning, developing, and managing a web application from the ground up. Enhanced the application to align with company goals and client feedback.
+  </li>
+  <li className="mb-3">
+    Designed, built, and launched a JavaScript chatbot widget that can be embedded in websites to provide customized video responses to users.
+  </li>
+  <li className="mb-3">
+    Developed and integrated extensions with over 100 CRM platforms.
+  </li>
+  <li className="mb-3">
+    Took ownership of understanding client analytics needs. Built an analytics module for clients to monitor engagement with their feedback forms.
+  </li>
+  <li className="mb-3">
+    Solely responsible for developing an email messaging platform and associated analytics reporting.
+  </li>
+  <li className="mb-3">
+    Streamlined processes for recording, storing, and uploading videos to major platforms.
+  </li>
+  <li className="mb-3">
+    Collaborated on UI wireframes and interfaces to improve user experience.
+  </li>
+</ul>
+          
 
+      
 
         
           <span className="isolate flex flex-wrap rounded-md shadow-sm">
@@ -166,23 +171,23 @@ export function Experience() {
 
 
 
-          <p className="relative z-10 mt-1 text-sm text-zinc-600 dark:text-zinc-400" style={{ 'marginTop': '20px' }}>
-
-            Developed 20-plus Social Media Integrations
-          </p>
-          <p className="relative z-10 mt-1 text-sm text-zinc-600 dark:text-zinc-400" style={{ 'marginTop': '20px' }}>
-            In charge of Developing website
-          </p>
-
-          <p className="relative z-10 mt-1 text-sm text-zinc-600 dark:text-zinc-400" style={{ 'marginTop': '20px' }}>
-            Involved in creating a Report Scheduling Module
-          </p>
-          <p className="relative z-10 mt-1 text-sm text-zinc-600 dark:text-zinc-400" style={{ 'marginTop': '20px' }}>
-            Created Team member portal
-          </p>
-          <p className="relative z-10 mt-1 text-sm text-zinc-600 dark:text-zinc-400" style={{ 'marginTop': '20px' }}>
-            Solely Responsible for Developing Analytics Module    </p>
-
+          <ul className="list-disc text-white pl-5 text-sm">
+  <li className="mb-3">
+    Developed over 20 social media integrations to enhance platform connectivity and user engagement.
+  </li>
+  <li className="mb-3">
+    In charge of developing and maintaining the company website, ensuring high performance and user-centric design.
+  </li>
+  <li className="mb-3">
+    Involved in creating a report scheduling module that automates and customizes report generation for clients.
+  </li>
+  <li className="mb-3">
+    Created a team member portal to facilitate internal communications and project management.
+  </li>
+  <li className="mb-3">
+    Solely responsible for developing an analytics module, enabling detailed insights into user interactions and behaviors.
+  </li>
+</ul>
             <span className="isolate flex flex-wrap rounded-md shadow-sm">
           {greyMetricsData.map((data, index) => (
 
@@ -213,30 +218,26 @@ export function Experience() {
 
 
 
-          <p className="relative z-10 mt-1 text-sm text-zinc-600 dark:text-zinc-400" style={{ 'marginTop': '20px' }}>
-
-            Developed responsive websites and web applications using HTML, CSS, JavaScript, jQuery, Node.js and MongoDB
-          </p>
-          <p className="relative z-10 mt-1 text-sm text-zinc-600 dark:text-zinc-400" style={{ 'marginTop': '20px' }}>
-            Played a key role in developing, testing and launching a dynamic e-commerce website
-            <span>
-              <a href="https://www.vijayadiagnostic.com/" className="text-teal-500 hover:underline underline"> Vijaya Diagnostic </a>
-            </span>
-            with an intuitive admin panel for client content management. Enabled non-technical users to update images, text and contacts.
-          </p>
-          <p className="relative z-10 mt-1 text-sm text-zinc-600 dark:text-zinc-400" style={{ 'marginTop': '20px' }}>
-            Collaborated closely with three clients to understand their vision and incorporate ongoing feedback during the development process to ensure satisfaction.
-          </p> <p className="relative z-10 mt-1 text-sm text-zinc-600 dark:text-zinc-400" style={{ 'marginTop': '20px' }}>
-            Created a 50-page website for driver training courses
-            <span>
-              <a href="https://www.dubaidrivingcenter.net/" className="text-teal-500 hover:underline underline"> Dubai Driving Center </a>
-            </span>
-            using responsive design.
-          </p> <p className="relative z-10 mt-1 text-sm text-zinc-600 dark:text-zinc-400" style={{ 'marginTop': '20px' }}>
-            Leveraged MongoDB and AWS S3 to securely store sensitive medical patient data, implementing safety precautions.
-          </p> <p className="relative z-10 mt-1 text-sm text-zinc-600 dark:text-zinc-400" style={{ 'marginTop': '20px' }}>
-            Embedded a payment gateway for secure financial transaction. 
-          </p>
+          <ul className="list-disc text-white pl-5 text-sm">
+  <li className="mb-3">
+    Developed responsive websites and web applications using HTML, CSS, JavaScript, jQuery, Node.js, and MongoDB.
+  </li>
+  <li className="mb-3">
+    Played a key role in developing, testing, and launching a dynamic e-commerce website <a href="https://www.vijayadiagnostic.com/" className="text-teal-500 hover:underline">Vijaya Diagnostic</a> with an intuitive admin panel for client content management, enabling non-technical users to update images, text, and contacts.
+  </li>
+  <li className="mb-3">
+    Collaborated closely with three clients to understand their vision and incorporate ongoing feedback during the development process to ensure satisfaction.
+  </li>
+  <li className="mb-3">
+    Created a 50-page website for driver training courses <a href="https://www.dubaidrivingcenter.net/" className="text-teal-500 hover:underline">Dubai Driving Center</a> using responsive design.
+  </li>
+  <li className="mb-3">
+    Leveraged MongoDB and AWS S3 to securely store sensitive medical patient data, implementing safety precautions.
+  </li>
+  <li className="mb-3">
+    Embedded a payment gateway for secure financial transactions.
+  </li>
+</ul>
 
           <span className="isolate flex flex-wrap rounded-md shadow-sm">
 
@@ -245,7 +246,9 @@ export function Experience() {
               <button
                 key={data}
                 type="button"
-                className="relative m-1 inline-flex items-center rounded-full px-3 py-2 text-sm font-semiboldring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10 mr-2" style={{ 'color': 'rgb(94 234 212 / 100%)', 'backgroundColor': 'hsla(160, 52%, 71%, .1)'}}
+                className="relative m-1 inline-flex items-center rounded-full px-3 py-2 text-sm font-semiboldring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10 mr-2"
+                
+                style={{ 'color': 'rgb(94 234 212 / 100%)', 'backgroundColor': 'hsla(160, 52%, 71%, .1)'}}
               >
                 
                 {data}

@@ -18,7 +18,7 @@ const navigation = [
     href:'/projects',
     current:false
   },
-  { name: 'Contact', href: 'https://forms.gle/ApdM72hgZhHCCooc9', current: false },
+  { name: 'Contact', href: 'https://tally.so/r/3XeBR4', current: false },
 ]
 const stats = [
   { label: 'Developer Since', value: '2018' },
