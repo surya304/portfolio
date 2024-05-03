@@ -20,13 +20,6 @@ const Projects = () => {
 
   const projects = [
     {
-      id: 1,
-      title: 'Project 1',
-      description: 'This is a brief description of Project 1.',
-      imageUrl: 'https://mybucket4345.s3.us-east-2.amazonaws.com/portfolio/gm-website+3.png',
-      showbtn: true
-    },
-    {
       id: 2,
       title: 'TapShort',
       description: 'Created an App Where You Can put all your social media Links In one place and share it you can keep it in insta bio or any where you want to share your social media links.',
@@ -35,12 +28,25 @@ const Projects = () => {
       websiteurl: 'https://tapshort.com',
       showbtn: true
 
-    }, {
-      id: 3,
-      title: 'Project 2',
-      description: 'This is a brief description of Project 2.',
-      imageUrl: 'https://mybucket4345.s3.us-east-2.amazonaws.com/portfolio/gm-website+3.png',
-      showbtn: false
+    }, 
+     
+    {
+      id: 1,
+      title: 'School Management Application',
+      description: 'This is a comprehensive School Management System built with Next.js, Express.js, and MongoDB. It provides a wide range of features to manage various aspects of a schools operations.',
+      imageUrl: 'https://mybucket4345.s3.us-east-2.amazonaws.com/portfolio/Screenshot+2024-05-03+163439.png',
+      redirectURL: 'https://github.com/surya304/school_management',
+      showbtn: true
+      
+    },
+    {
+    id: 3,
+      title: 'DevFinds',
+      description: 'DevFinds is a web application that provides various utilities for developers.',
+      imageUrl: 'https://mybucket4345.s3.us-east-2.amazonaws.com/portfolio/Screenshot+2024-05-03+183550.png',
+      redirectURL: 'https://github.com/surya304/DevFinds21',
+      websiteurl: 'https://devfinds.vercel.app/',
+      showbtn: true
 
     },
     // Add more projects as needed
@@ -56,7 +62,7 @@ const Projects = () => {
             <div className="mx-auto max-w-3xl text-base leading-7 text-gray-700">
               <p className="text-base font-semibold leading-7 text-indigo-600">My Projects</p>
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                My Journey to become a Front End Developer:
+               These are some of the Personal projects I have Created.
               </h1>
               <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
                 {projects.map(project => (
@@ -118,7 +124,7 @@ const ImageModal = ({ isOpen, close, imageUrl }) => {
 
   return (
     <div className="fixed inset-0 bg-black flex justify-center items-center " >
-      <div className="bg-white p-4 rounded-lg max-w-2xl max-h-full overflow-auto">
+      <div className="bg-white p-4 rounded-lg max-w-4xl max-h-full overflow-auto">
         <button 
         onClick={triggerclick}
         className="absolute bottom-5 right-5 text-white text-5xl">&times;</button>
