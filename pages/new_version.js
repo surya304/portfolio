@@ -11,7 +11,7 @@ import { useInView } from 'react-intersection-observer';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const navigation = [
-  { name: 'Work', href: '/new_version', current: true },
+  { name: 'Work', href: '/', current: true },
   { name: 'About', href: '/aboutus', current: false },
   {
     name:'projects',

@@ -12,7 +12,7 @@ const Projects = () => {
   }, []);
 
   const navigation = [
-    { name: 'Work', href: '/new_version', current: false },
+    { name: 'Work', href: '/', current: false },
     { name: 'About', href: '/aboutus', current: false },
     { name: 'Projects', href: '/projects', current: true },
     { name: 'Contact', href: 'https://tally.so/r/3XeBR4', current: false },
