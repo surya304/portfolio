@@ -8,7 +8,7 @@ import {Experience} from '../components/Experience'
 
 import { useInView } from 'react-intersection-observer';
 
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope,FaFilePdf } from 'react-icons/fa';
 
 const navigation = [
   { name: 'Work', href: '/', current: true },
@@ -35,7 +35,15 @@ function classNames(...classes) {
 export default function Example() {
   const [loaded, setLoaded] = useState(false);
 
-
+  function downloadFunc() {
+    var anchor = document.createElement('a');
+    anchor.setAttribute('href', '/Sai-Surya-Kalagani-Resume.pdf');
+    anchor.setAttribute('download', '');
+    document.body.appendChild(anchor);
+    anchor.click();
+    console.log("t")
+    anchor.parentNode.removeChild(anchor);
+  }
 
   useEffect(() => {
     setLoaded(true);
@@ -106,14 +114,18 @@ export default function Example() {
 
 
             <div className="flex justify-center space-x-4 mt-10">
-              <a href="https://github.com/surya304" target='_blank' rel="noreferrer" className="icon_style text-2xl text-black-500 rounded-full p-2 transition-colors duration-200 w-10 ">
+              <a title='Github Profile' href="https://github.com/surya304" target='_blank' rel="noreferrer" className="icon_style text-2xl text-black-500 rounded-full p-2 transition-colors duration-200 w-10 ">
                 <FaGithub className='cursor-pointer'/>
               </a>
-              <a href="https://www.linkedin.com/in/surya185" target='_blank' rel="noreferrer" className="icon_style text-2xl text-black-500 rounded-full p-2 transition-colors duration-200 w-10">
+              <a title='Linkedin Profile' href="https://www.linkedin.com/in/surya185" target='_blank' rel="noreferrer" className="icon_style text-2xl text-black-500 rounded-full p-2 transition-colors duration-200 w-10">
                 <FaLinkedin />
               </a>
-              <a href="mailto:ksaisurya304@gmail.com" target='_blank' rel="noreferrer" className="icon_style text-2xl text-black-500 rounded-full p-2 transition-colors duration-200 w-10">
+              <a title='Email Me' href="mailto:ksaisurya304@gmail.com" target='_blank' rel="noreferrer" className="icon_style text-2xl text-black-500 rounded-full p-2 transition-colors duration-200 w-10">
                 <FaEnvelope />
+              </a>
+              <a title="Resume" target="_blank" onClick={downloadFunc} rel="noreferrer" className="icon_style text-2xl text-black-500 rounded-full p-2 transition-colors duration-200 w-10">
+            
+            <FaFilePdf />
               </a>
             </div>
           </div>
