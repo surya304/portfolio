@@ -41,7 +41,6 @@ export default function Example() {
     anchor.setAttribute('download', '');
     document.body.appendChild(anchor);
     anchor.click();
-    console.log("t")
     anchor.parentNode.removeChild(anchor);
   }
 

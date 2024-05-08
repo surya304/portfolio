@@ -2,6 +2,7 @@ import React from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Dialog } from '@headlessui/react'
 import { useState } from 'react'
+import Link from 'next/link'
 
 
 function Navigation({ navigation }) {
@@ -77,19 +78,32 @@ function Navigation({ navigation }) {
                         <div className="-my-6 divide-y divide-gray-500/10">
                             <div className="space-y-2 py-6">
                                 {navigation.map((item) => (
-                                    <a
-                                        key={item.name}
-                                        href={item.href}
-                                        // className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 custom-text-color"
+                                    // <a
+                                    //     key={item.name}
+                                    //     href={item.href}
 
-                                        className={classNames(
-                                            item.current ? 'custom-selected text-black' : 'custom-text-color hover:text-black',
-                                            'rounded-full px-3 py-2 text-lg font-medium block'
-                                        )}
-                                        aria-current={item.current ? 'page' : undefined}
-                                    >
-                                        {item.name}
-                                    </a>
+                                    //     className={classNames(
+                                    //         item.current ? 'custom-selected text-black' : 'custom-text-color hover:text-black',
+                                    //         'rounded-full px-3 py-2 text-lg font-medium block'
+                                    //     )}
+                                    //     aria-current={item.current ? 'page' : undefined}
+                                    // >
+                                    //     {item.name}
+                                    // </a>
+                                    <Link
+  key={item.name}
+  href={item.href}
+>
+  <a
+    className={classNames(
+      item.current ? 'custom-selected text-black' : 'custom-text-color hover:text-black',
+      'rounded-full px-3 py-2 text-lg font-medium block'
+    )}
+    aria-current={item.current ? 'page' : undefined}
+  >
+    {item.name}
+  </a>
+</Link>
                                 ))}
                             </div>
 
