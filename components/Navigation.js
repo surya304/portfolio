@@ -11,9 +11,7 @@ function Navigation({ navigation }) {
     }
 
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-
-
+    
     return (
         <header className=" inset-x-0 sticky top-0" style={{zIndex:'1000'}} >
             <nav className="flex items-center justify-between p-6 lg:px-8 " aria-label="Global" >
@@ -32,7 +30,6 @@ function Navigation({ navigation }) {
                 </div>
                 <div className="hidden lg:flex lg:gap-x-12 p-3" style={{background:'hsla(158, 23%, 18%, .7)',backdropFilter:'blur(20px) saturate(1.7)',borderRadius:'30px'}}>
                     {navigation.map((item) => (
-
 
 
                         <a
