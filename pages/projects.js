@@ -45,7 +45,7 @@ const Projects = () => {
       description: 'DevFinds is a web application that provides various utilities for developers.',
       imageUrl: 'https://mybucket4345.s3.us-east-2.amazonaws.com/portfolio/Screenshot+2024-05-03+183550.png',
       redirectURL: 'https://github.com/surya304/DevFinds21',
-      websiteurl: 'https://devfinds.vercel.app/',
+      websiteurl: 'https://dev-finds21.vercel.app/',
       showbtn: true
 
     },
@@ -106,6 +106,11 @@ const ProjectCard = ({ project }) => {
       <div className="mt-4">
         <h3 className="text-lg font-semibold text-black">{project.title}</h3>
         <p className="text-sm text-gray-600">{project.description}</p>
+        {project.title == 'TapShort' && <div className="flex items-center mt-2 text-sm text-gray-600">
+          <InformationCircleIcon className="h-10 w-10 text-yellow-500" />
+          <span className="ml-2">Please wait for 30 sec while the server starts . Currently I am using Free Tier 😅</span>
+        </div>}
+          
         {project.websiteurl && <a href={project.websiteurl} target='blank'  className="text-indigo-600 hover:text-indigo-800 mt-2 inline-block underline">Visit Website</a>}
         <br></br>
         {project.showbtn && <a href={project.redirectURL} target='blank' className="text-indigo-600 hover:text-indigo-800 mt-2 inline-block underline">Read More at github</a>}
