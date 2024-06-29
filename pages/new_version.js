@@ -1,7 +1,5 @@
 import { useState, useEffect,useRef } from 'react'
 import Image from 'next/image'
-
-
 import Navigation from '../components/Navigation'
 import { Author } from '../components/Author'
 import {Experience} from '../components/Experience'
