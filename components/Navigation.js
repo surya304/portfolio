@@ -11,9 +11,9 @@ function Navigation({ navigation }) {
     }
 
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-    
+
     return (
-        <header className=" inset-x-0 sticky top-0" style={{zIndex:'1000'}} >
+        <header className=" inset-x-0 sticky top-0" style={{ zIndex: '1000' }} >
             <nav className="flex items-center justify-between p-6 lg:px-8 " aria-label="Global" >
                 <div className="flex lg:flex-1">
 
@@ -25,10 +25,10 @@ function Navigation({ navigation }) {
                         onClick={() => setMobileMenuOpen(true)}
                     >
                         <span className="sr-only">Open main menu</span>
-                        {mobileMenuOpen ?  <XMarkIcon className="h-6 w-6" aria-hidden="true" /> : <Bars3Icon className="h-6 w-6" aria-hidden="true" />}
+                        {mobileMenuOpen ? <XMarkIcon className="h-6 w-6" aria-hidden="true" /> : <Bars3Icon className="h-6 w-6" aria-hidden="true" />}
                     </button>
                 </div>
-                <div className="hidden lg:flex lg:gap-x-12 p-3" style={{background:'hsla(158, 23%, 18%, .7)',backdropFilter:'blur(20px) saturate(1.7)',borderRadius:'30px'}}>
+                <div className="hidden lg:flex lg:gap-x-12 p-3" style={{ background: 'hsla(158, 23%, 18%, .7)', backdropFilter: 'blur(20px) saturate(1.7)', borderRadius: '30px' }}>
                     {navigation.map((item) => (
 
 
@@ -67,7 +67,7 @@ function Navigation({ navigation }) {
                             onClick={() => setMobileMenuOpen(false)}
                         >
                             <span className="sr-only">Close menu</span>
-                            {mobileMenuOpen ?  <XMarkIcon className="h-6 w-6" aria-hidden="true" /> : <Bars3Icon className="h-6 w-6" aria-hidden="true" />}
+                            {mobileMenuOpen ? <XMarkIcon className="h-6 w-6" aria-hidden="true" /> : <Bars3Icon className="h-6 w-6" aria-hidden="true" />}
 
                         </button>
                     </div>
@@ -88,19 +88,19 @@ function Navigation({ navigation }) {
                                     //     {item.name}
                                     // </a>
                                     <Link
-  key={item.name}
-  href={item.href}
->
-  <a
-    className={classNames(
-      item.current ? 'custom-selected text-black' : 'custom-text-color hover:text-black',
-      'rounded-full px-3 py-2 text-lg font-medium block'
-    )}
-    aria-current={item.current ? 'page' : undefined}
-  >
-    {item.name}
-  </a>
-</Link>
+                                        key={item.name}
+                                        href={item.href}
+                                    >
+                                        <a
+                                            className={classNames(
+                                                item.current ? 'custom-selected text-black' : 'custom-text-color hover:text-black',
+                                                'rounded-full px-3 py-2 text-lg font-medium block'
+                                            )}
+                                            aria-current={item.current ? 'page' : undefined}
+                                        >
+                                            {item.name}
+                                        </a>
+                                    </Link>
                                 ))}
                             </div>
 
