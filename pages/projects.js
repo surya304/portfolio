@@ -26,7 +26,6 @@ const Projects = () => {
       imageUrl: 'https://mybucket4345.s3.us-east-2.amazonaws.com/portfolio/tapshort.png',
       redirectURL: 'https://github.com/surya304/BioTree',
       websiteurl: 'https://tapshort.onrender.com',
-      showbtn: true
 
     }, 
      
@@ -35,8 +34,8 @@ const Projects = () => {
       title: 'School Management Application',
       description: 'This is a comprehensive School Management System built with Next.js, Express.js, and MongoDB. It provides a wide range of features to manage various aspects of a schools operations.',
       imageUrl: 'https://mybucket4345.s3.us-east-2.amazonaws.com/portfolio/Screenshot+2024-05-03+163439.png',
-      redirectURL: 'https://github.com/surya304/school_management',
-      showbtn: false
+      // redirectURL: 'https://github.com/surya304/school_management',
+      websiteurl: 'https://school-management-azure.vercel.app/',
       
     },
     {
@@ -46,7 +45,6 @@ const Projects = () => {
       imageUrl: 'https://mybucket4345.s3.us-east-2.amazonaws.com/portfolio/Screenshot+2024-05-03+183550.png',
       redirectURL: 'https://github.com/surya304/DevFinds21',
       websiteurl: 'https://dev-finds21.vercel.app/',
-      showbtn: true
 
     },
     // Add more projects as needed
@@ -113,7 +111,7 @@ const ProjectCard = ({ project }) => {
           
         {project.websiteurl && <a href={project.websiteurl} target='blank'  className="text-indigo-600 hover:text-indigo-800 mt-2 inline-block underline">Visit Website</a>}
         <br></br>
-        {project.showbtn && <a href={project.redirectURL} target='blank' className="text-indigo-600 hover:text-indigo-800 mt-2 inline-block underline">Read More at github</a>}
+        {project.redirectURL && <a href={project.redirectURL} target='blank' className="text-indigo-600 hover:text-indigo-800 mt-2 inline-block underline">Read More at github</a>}
       </div>
       <ImageModal isOpen={isModalOpen} close={closeModal} imageUrl={project.imageUrl} />
     </div>
