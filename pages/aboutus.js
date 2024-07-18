@@ -70,11 +70,6 @@ const AboutUs = () => {
                   <p className="mt-8">
                     It wasn&apos;t a walk in the park, though. We faced a lot of failures, but I always tried to learn from those experiences and move forward.
 
-
-
-
-
-
                   </p>
 
                   <figure className="mt-16">
@@ -102,15 +97,15 @@ const AboutUs = () => {
                     I’m excited to work on new projects, because I learn something new every time. I’m excited for the next challenge .
                   </p>
 
-                  <p className="mt-8">
-                    I  always been captivated by the art of coding. There&apos;s this thrill in discovering fresh ways to write code that not only works but does so in a slick, efficient manner. I&apos;m on this perpetual quest to unravel the secrets behind crafting code that&apos;s not just functional but also crystal clear in its logic. And you know what? I&apos;m all for uncovering those ingenious little hacks that make the journey smoother. It&apos;s like cracking a puzzle that leads to a eureka moment every single time. There&apos;s something magical about it – diving deep into the labyrinth of code and emerging with solutions that are elegant and efficient.
-                  </p>
+                 
                 </div>
 
                 <div className="mt-16 max-w-2xl">
                   <h2 className="text-2xl font-bold tracking-tight text-gray-900">As a person</h2>
                   <p className="mt-6">
-                    If I had to describe myself in one word, it would be **resourceful**. I’ll take a problem, break it into smaller bits and  Try to find a solution. Creativity has helped me sail around tough obstacles.
+                    If I had to describe myself in one word, it would be <b>
+                    *resourceful**
+                      </b>. I’ll take a problem, break it into smaller bits and  Try to find a solution. Creativity has helped me sail around tough obstacles.
 
                     **I’m curious by nature and I love learning**. I’ve amassed a wide range of skills and interests that when put together, end up feeding my career in one way or another.
                   </p>
@@ -132,15 +127,14 @@ const AboutUs = () => {
                     I&apos;m a team player, with my background in engineering and art, I feel comfortable interacting with both the technically oriented people of the team as well as the artistically oriented ones. I will always go the extra mile to help my team.
                   </p>
 
+                
                   <p className="mt-6">
-                    My communications skills are excellent. I feel comfortable at conveying ideas in creative ways so that everyone can understand them.
+                  I feel like Having Good communication skills are as important as having any Core Technical Skills . I was in a Startup Environment where I have to wear multiple hats, work with different teams, and communicate with different stakeholders . 
 
                   </p>
 
                   <p className="mt-6">
-                    My experience working for a small startup gave me exposure to the business side of a tech company, while at the same time delivering industry standard results on the production side. I have lead projects and Delivered the Results .
-
-                    If you are Interested after hearing this and want to know more about me . I&apos;d love to hear from you
+                  My experience working for a small startup gave me exposure to how to build a product from an idea to an executable product. You constantly improve and understand your user base, making changes accordingly. Everyone on the team works together to make the product better every day. It felt like we were competing for a championship, where as a team, we had to get better every day to win in the end.I had this Mindset of " Nothing's handed to you; you gotta earn it yourself" . If you're interested after hearing this and want to know more about me, I'd love to hear from you.
                   </p>
 
 
