@@ -134,7 +134,7 @@ const AboutUs = () => {
                   </p>
 
                   <p className="mt-6">
-                  My experience working for a small startup gave me exposure to how to build a product from an idea to an executable product. You constantly improve and understand your user base, making changes accordingly. Everyone on the team works together to make the product better every day. It felt like we were competing for a championship, where as a team, we had to get better every day to win in the end.I had this Mindset of " Nothing's handed to you; you gotta earn it yourself" . If you're interested after hearing this and want to know more about me, I'd love to hear from you.
+                  My experience working for a small startup gave me exposure to how to build a product from an idea to an executable product. You constantly improve and understand your user base, making changes accordingly. Everyone on the team works together to make the product better every day. It felt like we were competing for a championship, where as a team, we had to get better every day to win in the end.I had this Mindset of &quot; Nothings handed to you; you gotta earn it yourself &quot; . If youre interested after hearing this and want to know more about me, I'd love to hear from you.
                   </p>
 
 
