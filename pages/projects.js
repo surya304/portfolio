@@ -24,7 +24,7 @@ const Projects = () => {
       title: 'TapShort',
       description: 'Created an App Where You Can put all your social media Links In one place and share it you can keep it in insta bio or any where you want to share your social media links.',
       imageUrl: 'https://mybucket4345.s3.us-east-2.amazonaws.com/portfolio/tapshort.png',
-      redirectURL: 'https://github.com/surya304/BioTree',
+      redirectURL: 'https://github.com/surya304/BioTree1',
       websiteurl: 'https://tapshort.onrender.com',
 
     }, 
@@ -104,10 +104,7 @@ const ProjectCard = ({ project }) => {
       <div className="mt-4">
         <h3 className="text-lg font-semibold text-black">{project.title}</h3>
         <p className="text-sm text-gray-600">{project.description}</p>
-        {project.title == 'TapShort' && <div className="flex items-center mt-2 text-sm text-gray-600">
-          <InformationCircleIcon className="h-10 w-10 text-yellow-500" />
-          <span className="ml-2">Please wait for 30 sec while the server starts . Currently I am using Free Tier 😅</span>
-        </div>}
+      
           
         {project.websiteurl && <a href={project.websiteurl} target='blank'  className="text-indigo-600 hover:text-indigo-800 mt-2 inline-block underline">Visit Website</a>}
         <br></br>
