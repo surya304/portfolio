@@ -7,19 +7,19 @@ function MyDocument() {
 
       <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="I am A Front End Developer who have extensive experience creating web applications using frontend technologies like Next.js, React, Vue, NuxtJS, Tailwind CSS" />
+        <meta name="description" content="I am A Front End Developer who has extensive experience creating web applications using frontend technologies like Next.js, React, Vue, NuxtJS, Tailwind CSS" />
         <meta name="author" content="Sai Surya Kalagani" />
         <meta name="keywords" content="Front End Developer, Frontend Developer, Next.js, React, Vue, NuxtJS, Tailwind CSS" />
 
         <meta property="og:title" content="Front End Developer | Sai Surya Kalagani" />
-        <meta property="og:description" content="Build your web Application from scratch. I have extensive experience creating web applications using frontend technologies like Next.js, React, Vue, NuxtJS, Tailwind CSS" />
+        <meta property="og:description" content="I am A Front End Developer who has extensive experience creating web applications using frontend technologies like Next.js, React, Vue, NuxtJS, Tailwind CSS" />
         <meta property="og:image" content="https://mybucket4345.s3.us-east-2.amazonaws.com/Screenshot+2024-09-10+111718.png" />
         <meta property="og:url" content="https://saisurya.netlify.app/" />
         <meta property="og:type" content="website" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Front End Developer | Sai Surya Kalagani" />
-        <meta name="twitter:description" content="Build your web Application from scratch. I have extensive experience creating web applications using frontend technologies like Next.js, React, Vue, NuxtJS, Tailwind CSS" />
+        <meta name="twitter:description" content="I am A Front End Developer who has extensive experience creating web applications using frontend technologies like Next.js, React, Vue, NuxtJS, Tailwind CSS" />
         <meta name="twitter:image" content="https://mybucket4345.s3.us-east-2.amazonaws.com/Screenshot+2024-09-10+111718.png" />
 
         <link
