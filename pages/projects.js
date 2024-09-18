@@ -26,7 +26,6 @@ const Projects = () => {
       imageUrl: 'https://mybucket4345.s3.us-east-2.amazonaws.com/portfolio/tapshort.png',
       redirectURL: 'https://github.com/surya304/BioTree1',
       websiteurl: 'https://tapshort.onrender.com',
-
     }, 
      
     {

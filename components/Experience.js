@@ -15,7 +15,7 @@ function ToolsSection({ pic_src, company_title, width, height, children, ...prop
         className='rounded-lg '
       />
 
-      <h1 className="text-2xl mt-3 font-semibold tracking-tight text-zinc-800 dark:text-zinc-100 mb-5">
+      <h1 className="text-2xl mt-3 font-semibold tracking-tight text-white mb-5">
         {company_title}
       </h1>
       <ul role="list" className="space-y-6">
@@ -109,7 +109,7 @@ export function Experience() {
       <div className="space-y-20">
         <ToolsSection title="2021 - 2022" pic_src="images/videoform.webp" company_title='VideoForm' width={70} height={50} >
 
-          <h2 className="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+          <h2 className="text-base font-semibold tracking-tight text-white">
             Full stack developer
           </h2>
 
@@ -164,7 +164,7 @@ export function Experience() {
 
 
         <ToolsSection title="2019 - 2020" pic_src="images/gm.png" company_title='GreyMetrics' width={200} height={100}>
-          <h2 className="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+          <h2 className="text-base font-semibold tracking-tight text-white">
             Front End developer
           </h2>
 
@@ -211,7 +211,7 @@ export function Experience() {
         </ToolsSection>
 
         <ToolsSection title="2018 - 2019" pic_src="images/aquodigital.webp" company_title='Aquo Digital' width={80} height={100}>
-          <h2 className="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+          <h2 className="text-base font-semibold tracking-tight text-white">
             Front End developer
           </h2>
 

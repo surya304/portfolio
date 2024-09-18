@@ -49,7 +49,7 @@ a {
 }
 
 .custom-text-color{
-  color: #8fdcc2;
+  color: #8fdcc2 !important; /* Use !important to ensure the style is applied */
 }
 
 .custom-selected{
