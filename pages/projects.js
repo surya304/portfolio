@@ -19,13 +19,14 @@ const Projects = () => {
   ];
 
   const projects = [
+
     {
       id: 2,
-      title: 'TapShort',
+      title: 'BioTree',
       description: 'Created an App Where You Can put all your social media Links In one place and share it you can keep it in insta bio or any where you want to share your social media links.',
       imageUrl: 'https://mybucket4345.s3.us-east-2.amazonaws.com/portfolio/tapshort.png',
       redirectURL: 'https://github.com/surya304/BioTree1',
-      websiteurl: 'https://tapshort.onrender.com',
+      websiteurl: 'https://biotree.onrender.com/',
     }, 
      
     {
