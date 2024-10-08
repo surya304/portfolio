@@ -19,7 +19,6 @@ const Projects = () => {
   ];
 
   const projects = [
-
     {
       id: 2,
       title: 'BioTree',
