@@ -1,12 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
-
 import { GridPattern } from './GridPattern'
 import { SectionHeading } from './SectionHeading'
 import authorImage from '../public/images/profile_pic.jpg'
 import { useRouter } from 'next/router'
-
-
+import { useInView } from 'react-intersection-observer'
 
 export function Author() {
   const stats = [
@@ -22,25 +20,24 @@ export function Author() {
     router.push('/aboutus')
   }
 
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Trigger animation only once
+    threshold: 0.1, // Trigger when 10% of the element is in view
+  });
+
   return (
     <section
       id="author"
       aria-labelledby="author-title"
       className="relative scroll-mt-14 pb-3 pt-8 sm:scroll-mt-32 sm:pb-16 sm:pt-10 lg:pt-16"
+      ref={ref}
     >
-
-      <div className="absolute inset-x-0 bottom-0 top-1/2 text-slate-900/10 [mask-image:linear-gradient(transparent,white)]"
-
-      >
+      <div className="absolute inset-x-0 bottom-0 top-1/2 text-slate-900/10 [mask-image:linear-gradient(transparent,white)]">
         <GridPattern x="50%" y="100%" />
       </div>
 
-
-
       <div className="relative mx-auto max-w-5xl pt-16 sm:px-6">
-        <div className="bg-custom-back pt-px sm-rounded-6xl lg-rounded-8xl"
-
-        >
+        <div className="bg-custom-back pt-px sm-rounded-6xl lg-rounded-8xl">
           <div className="relative mx-auto -mt-16 h-44 w-44 overflow-hidden rounded-full bg-slate-200 md:float-right md:h-64 md:w-64 md:[shape-outside:circle(40%)] lg:mr-20 lg:h-72 lg:w-72">
             <Image
               className="absolute inset-0 h-full w-full object-cover box-shadow-2xl"
@@ -50,22 +47,18 @@ export function Author() {
             />
           </div>
           <div className="px-4 py-10 sm:px-10 sm:py-16 md:py-20 lg:px-20 lg:py-32">
-
-            <SectionHeading number="0" id="author-title">
+            <SectionHeading number="0" id="author-title" className={`${inView ? 'animate-fade-in-top-bottom delay-0' : ''}`}>
               About Me
             </SectionHeading>
-            <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
-              Hey
-              there, I’m a <span className="block text-blue-600"> Front End Developer </span>  Who Loves building Stuff.
+            <p className={`mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl ${inView ? 'animate-fade-in-top-bottom delay-150' : ''}`}>
+              Hey there, I’m a <span className="block text-blue-600"> Front End Developer </span> Who Loves building Stuff.
             </p>
-            <p className="mt-4 text-lg tracking-tight text-slate-700">
+            <p className={`mt-4 text-lg tracking-tight text-slate-700 ${inView ? 'animate-fade-in-top-bottom delay-300' : ''}`}>
               My passion for design and crafting beautiful user interfaces led me into the world of coding. I began my journey at a startup, initially focusing on developing websites and web applications as a UI developer. Over time, I transitioned to become a front-end developer and eventually a junior full-stack developer.
-
-              Working within the same team for four years has been an incredible experience. Together, we ve embarked on the creation of three distinct startups, each venture adding its own unique chapter to our collective journey. The collaborative spirit and creative synergy within the team have made this journey truly remarkable.
+              Working within the same team for four years has been an incredible experience. Together, we’ve embarked on the creation of three distinct startups, each venture adding its own unique chapter to our collective journey. The collaborative spirit and creative synergy within the team have made this journey truly remarkable.
             </p>
 
-
-            <div className="mt-10">
+            <div className={`mt-10 ${inView ? 'animate-fade-in-top-bottom delay-450' : ''}`}>
               <dl className="grid grid-cols-2 gap-x-4 gap-y-8">
                 {stats.map((stat) => (
                   <div key={stat.label} className="border-t-2 border-black pt-6">
@@ -76,15 +69,13 @@ export function Author() {
               </dl>
             </div>
 
-            <p className="mt-8">
-
-
+            <p className={`mt-8 ${inView ? 'animate-fade-in-top-bottom delay-600' : ''}`}>
               <button
                 className="inline-flex items-center text-base font-medium tracking-tight text-blue-600"
-                onClick={handleRedirect}>
+                onClick={handleRedirect}
+              >
                 Read More
               </button>
-
             </p>
           </div>
         </div>

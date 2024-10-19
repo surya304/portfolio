@@ -33,12 +33,11 @@ const Projects = () => {
       title: 'School Management Application',
       description: 'This is a comprehensive School Management System built with Next.js, Express.js, and MongoDB. It provides a wide range of features to manage various aspects of a schools operations.',
       imageUrl: 'https://mybucket4345.s3.us-east-2.amazonaws.com/portfolio/Screenshot+2024-05-03+163439.png',
-      // redirectURL: 'https://github.com/surya304/school_management',
       websiteurl: 'https://school-management-ruddy.vercel.app/',
       
     },
     {
-    id: 3,
+      id: 3,
       title: 'DevFinds',
       description: 'DevFinds is a web application that provides various utilities for developers.',
       imageUrl: 'https://mybucket4345.s3.us-east-2.amazonaws.com/portfolio/Screenshot+2024-05-03+183550.png',
@@ -62,8 +61,10 @@ const Projects = () => {
                These are some of the Personal projects I have Created.
               </h1>
               <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
-                {projects.map(project => (
-                  <ProjectCard key={project.id} project={project} />
+                {projects.map((project, index) => (
+                  <div key={project.id} style={{ animationDelay: `${index * 0.15}s` }}>
+                    <ProjectCard project={project} />
+                  </div>
                 ))}
               </div>
             </div>
@@ -80,40 +81,36 @@ const ProjectCard = ({ project }) => {
 
   const openModal = () => setModalOpen(true);
 
- function closeModal() {
-  
+  function closeModal() {
     setModalOpen(false);
-
   }
 
   return (
-    <div className="flex flex-col shadow-md rounded-xl p-4" style={{ backgroundColor: '#BDDFF9' }}>
-  <div onClick={openModal} className="cursor-pointer ">
+    <div className="flex flex-col shadow-md rounded-xl p-4 bg-white transform hover:scale-105 transition-transform duration-500 ease-in-out animate-fade-in-top-bottom" style={{ backgroundColor: '#BDDFF9', height: '400px' }}>
+      <div onClick={openModal} className="cursor-pointer flex-grow">
 
-<Image
-  src={project.imageUrl}
-  alt={project.title}
-  width={400}
-  height={225}
-  className="rounded-t-xl transition-opacity duration-300 ease-in-out hover:opacity-50"
-/>
+        <Image
+          src={project.imageUrl}
+          alt={project.title}
+          width={400}
+          height={225}
+          className="rounded-t-xl transition-opacity duration-300 ease-in-out hover:opacity-50"
+        />
 
-</div>
+      </div>
 
-      <div className="mt-4">
+      <div className="mt-4 flex-grow">
         <h3 className="text-lg font-semibold text-black">{project.title}</h3>
         <p className="text-sm text-gray-600">{project.description}</p>
       
-          
-        {project.websiteurl && <a href={project.websiteurl} target='blank'  className="text-indigo-600 hover:text-indigo-800 mt-2 inline-block underline">Visit Website</a>}
-        <br></br>
+        {project.websiteurl && <a href={project.websiteurl} target='blank' className="text-indigo-600 hover:text-indigo-800 mt-2 inline-block underline">Visit Website</a>}
+        <br />
         {project.redirectURL && <a href={project.redirectURL} target='blank' className="text-indigo-600 hover:text-indigo-800 mt-2 inline-block underline">Read More at github</a>}
       </div>
       <ImageModal isOpen={isModalOpen} close={closeModal} imageUrl={project.imageUrl} />
     </div>
   );
 };
-
 const ImageModal = ({ isOpen, close, imageUrl }) => {
   if (!isOpen) return null;
 
