@@ -34,6 +34,7 @@ const Projects = () => {
       description: 'This is a comprehensive School Management System built with Next.js, Express.js, and MongoDB. It provides a wide range of features to manage various aspects of a schools operations.',
       imageUrl: 'https://mybucket4345.s3.us-east-2.amazonaws.com/portfolio/Screenshot+2024-05-03+163439.png',
       websiteurl: 'https://school-management-ruddy.vercel.app/',
+      redirectURL: 'https://github.com/surya304/school_management1',
       
     },
     {
