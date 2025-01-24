@@ -35,6 +35,12 @@ function MyDocument() {
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-7PKEFX1G83"
         ></script>
+
+        
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"
+        integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -45,10 +51,13 @@ function MyDocument() {
             `,
           }}
         />
+
       </Head>
       <body>
         <Main />
         <NextScript />
+
+        
       </body>
     </Html>
   );

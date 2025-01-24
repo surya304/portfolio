@@ -25,9 +25,9 @@ const AboutUs = () => {
     );
 
     // Observe each section
-    sectionsRef.current.forEach((section) => {
-      if (section) observer.observe(section);
-    });
+    // sectionsRef.current.forEach((section) => {
+    //   if (section) observer.observe(section);
+    // });
 
     // Cleanup observer on component unmount
     return () => {
