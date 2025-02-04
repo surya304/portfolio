@@ -59,7 +59,7 @@ const AboutUs = () => {
                   About Me
                 </p>
                 <h1 ref={(el) => (sectionsRef.current[1] = el)} className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                  My Journey to become a Front End Developer :
+                  My Journey to become a Full Stack Developer :
                 </h1>
                 <p ref={(el) => (sectionsRef.current[2] = el)} className="mt-8">
                   I&apos;m from Hyderabad, India. I finished my Computer Science degree back in 2018. During my final year in college, I really wanted to follow my passion for becoming a UI developer, so I joined a startup called Aquo Digital, which was into growth hacking and digital marketing.
