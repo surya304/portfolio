@@ -47,7 +47,8 @@ const Projects = () => {
       title: 'developers911',
       description: 'This is a Documentation platform where you will  find all the necessary code and  for Building a Full Stack Web App.',
       imageUrl: 'https://mybucket4345.s3.us-east-2.amazonaws.com/portfolio/developer911.PNG',
-      websiteurl: 'https://developers911.vercel.app/'
+      websiteurl: 'https://developers911.vercel.app/',
+      redirectURL:'https://github.com/surya304/developers911'
       }
   ];
 
