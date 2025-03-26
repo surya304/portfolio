@@ -117,6 +117,10 @@ const ProjectCard = ({ project, setSelectedImage }) => {
         {project.websiteurl && <a href={project.websiteurl} target='_blank' rel='noreferrer' className="text-indigo-600 hover:text-indigo-800 mt-2 inline-block underline">Visit Website</a>}
         <br />
         {project.redirectURL && <a href={project.redirectURL} target='_blank' rel='noreferrer' className="text-indigo-600 hover:text-indigo-800 mt-2 inline-block underline">Read More on GitHub</a>}
+     
+        <div className="mt-2">
+          <p className="text-xs text-red-600 font-medium">Important: Please wait for a while while the server starts from cold start. It's on free tier.</p>
+        </div>
       </div>
     </div>
   );
