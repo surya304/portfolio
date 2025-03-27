@@ -153,7 +153,7 @@ const Projects = () => {
             <div className="mx-auto max-w-3xl text-base leading-7 text-gray-700">
               <p className="text-base font-semibold leading-7 text-indigo-600">Professional Work</p>
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-10">
-                Projects Ive contributed to professionally in my career in all the companies I have worked.
+                Some of the  Projects which are Live that Ive contributed to professionally in my career in all the companies I have worked.
               </h1>
               <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
                 {companyProjects.map((project, index) => (
