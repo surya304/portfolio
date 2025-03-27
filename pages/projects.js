@@ -47,8 +47,8 @@ const Projects = () => {
       description: 'Created an App Where You Can put all your social media Links In one place and share it.',
       imageUrl: 'https://mybucket4345.s3.us-east-2.amazonaws.com/portfolio/tapshort.png',
       redirectURL: 'https://github.com/surya304/BioTree1',
-      websiteurl: 'https://biotree.onrender.com/',
-      technologies: ['HTML/CSS', 'JavaScript', 'jQuery', 'AJAX', 'REST API', 'MongoDB', 'Express.js', 'Node.js', 'Mongoose', 'Authentication', 'Bootstrap']
+      websiteurl: 'https://biotree1.vercel.app/',
+      technologies: ['HTML/CSS','EJS','JavaScript', 'jQuery', 'AJAX', 'REST API', 'MongoDB', 'Express.js', 'Node.js', 'Mongoose', 'Authentication', 'Bootstrap']
     },
     {
       id: 1,
@@ -76,6 +76,30 @@ const Projects = () => {
       websiteurl: 'https://developers911.vercel.app/',
       redirectURL: 'https://github.com/surya304/developers911',
       technologies: ['Next.js', 'React', 'Markdown', 'MDX', 'Tailwind CSS', 'Code Highlighting', 'Responsive Design']
+    },
+    {
+      id: 5,
+      title: 'Customer Insights Platform',
+      description: 'A comprehensive overview of customer feedback across all channels (Social Media, Reviews, Surveys, and Support Tickets) to identify trends and improve customer satisfaction.',
+      imageUrl: 'https://mybucket4345.s3.us-east-2.amazonaws.com/Screenshot+2025-03-27+175356.png',
+      websiteurl: 'https://customer-insights-platform.vercel.app/',
+      redirectURL:'https://github.com/surya304/CustomerInsightsPlatform',
+      technologies:  [
+        'React', 
+        'TypeScript', 
+        'Vite', 
+        'GraphQL', 
+        'MongoDB', 
+        'Express.js', 
+        'Node.js', 
+        'Chart.js', 
+        'Tailwind CSS', 
+        'shadcn/ui', 
+        'Radix UI', 
+        'Vercel', 
+        'React Router', 
+      ]
+
     }
   ];
 
@@ -122,10 +146,6 @@ const Projects = () => {
     }
   ];
 
-
-
-
-
   return (
     <div className="bg-custom">
       <Navigation navigation={navigation} />
@@ -153,8 +173,7 @@ const Projects = () => {
             <div className="mx-auto max-w-3xl text-base leading-7 text-gray-700">
               <p className="text-base font-semibold leading-7 text-indigo-600">Professional Work</p>
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-10">
-                Some of the  Projects which are Live that Ive contributed to professionally in my career in all the companies I have worked.
-              </h1>
+              Notable live projects Ive worked on and contributed to during my professional career across multiple companies.              </h1>
               <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
                 {companyProjects.map((project, index) => (
                   <div key={project.id} style={{ animationDelay: `${index * 0.15}s` }}>
@@ -211,11 +230,12 @@ const ProjectCard = ({ project, setSelectedImage }) => {
   
   return (
     <div className="flex flex-col shadow-md rounded-xl p-4 bg-white transform hover:scale-105 transition-transform duration-500 ease-in-out animate-fade-in-top-bottom relative" style={{ backgroundColor: '#BDDFF9', height: 'auto', minHeight: '400px' }}>
-     <div className="relative cursor-pointer" onClick={() => setSelectedImage(project.imageUrl)}>
+     <div className="relative cursor-pointer" >
   <Image src={project.imageUrl} alt={project.title} width={400} height={225} className="rounded-t-xl" />
-  <div className="absolute inset-0 bg-black bg-opacity-30 opacity-0 hover:opacity-100 flex items-center justify-center transition-opacity duration-300 rounded-t-xl">
-    <EyeIcon className="h-10 w-10 text-white" />
-  </div>
+
+        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-t-xl opacity-0 hover:opacity-100 transition-opacity duration-300" onClick={() => setSelectedImage(project.imageUrl)}>
+          <EyeIcon className="h-8 w-8 text-white" />
+          </div>
 </div>
       <div className="mt-4 flex-grow">
         <h3 className="text-lg font-semibold text-black">{project.title}</h3>
@@ -244,12 +264,7 @@ const ProjectCard = ({ project, setSelectedImage }) => {
           }
         </div>
         
-        {isPersonalProject && (
-          <div className="mt-2">
-            <p className="text-xs text-red-600 font-medium">Important: Please wait for a while while the server starts from cold start. Its on free tier.</p>
-          </div>
-        )}
-        
+    
         {project.isDeprecated && (
           <div className="mt-2">
             <p className="text-xs text-amber-600 font-medium">Note: This project has been deprecated.</p>
