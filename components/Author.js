@@ -51,7 +51,7 @@ export function Author() {
               About Me
             </SectionHeading>
             <p className={`mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl ${inView ? 'animate-fade-in-top-bottom delay-150' : ''}`}>
-              Hey there, I’m a <span className="block text-blue-600"> Front End Developer </span> Who Loves building Stuff.
+              Hey there, I’m a <span className="block text-blue-600"> Full Stack Developer </span> Who Loves building Stuff.
             </p>
             <p className={`mt-4 text-lg tracking-tight text-slate-700 ${inView ? 'animate-fade-in-top-bottom delay-300' : ''}`}>
               My passion for design and crafting beautiful user interfaces led me into the world of coding. I began my journey at a startup, initially focusing on developing websites and web applications as a UI developer. Over time, I transitioned to become a front-end developer and eventually a junior full-stack developer.

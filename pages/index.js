@@ -103,7 +103,7 @@ export default function Example() {
                 inView2 ? 'translate-y-5' : 'translate-y-full'
               } transition-transform duration-1000`}
             >
-              A Front End Developer.
+              A Full Stack Developer.
               <span className="absolute left-0 bottom-[-80px]">
                 <Image
                   src="/images/star.png"
