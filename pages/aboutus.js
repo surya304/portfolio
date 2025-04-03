@@ -62,8 +62,8 @@ const AboutUs = () => {
                   My Journey to become a Full Stack Developer :
                 </h1>
                 <p ref={(el) => (sectionsRef.current[2] = el)} className="mt-8">
-                  I&apos;m from Hyderabad, India. I finished my Computer Science degree back in 2018. During my final year in college, I really wanted to follow my passion for becoming a UI developer, so I joined a startup called Aquo Digital, which was into growth hacking and digital marketing.
-                </p>
+  I&apos;m originally from Hyderabad, India, but I currently live in Canada. I finished my Computer Science degree back in 2018, and recently completed my Post-Graduate Diploma in Web Development with Distinction (3.9 GPA). During my final year in college, I really wanted to follow my passion for becoming a UI developer, so I joined a startup called Aquo Digital, which was into growth hacking and digital marketing.
+</p>
                 <div ref={(el) => (sectionsRef.current[3] = el)} className="mt-7 max-w-2xl">
                   <p>
                     Later on, with the same group of people, we started a SAAS company called <a href='https://greymetrics.com/' className='hover:text-blue-500 underline' target='_blank' rel='noreferrer'>GreyMetrics</a>. We eventually sold that company and then jumped into a new venture called <a href='https://www.videoform.com/' className='hover:text-blue-500 underline' target='_blank' rel='noreferrer'>VideoForm</a>. We managed to raise an initial seed fund of 100k for it.
